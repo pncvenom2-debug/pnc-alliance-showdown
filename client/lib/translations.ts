@@ -88,7 +88,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Avoid quests with a \"?\" sign. Like bad quests, they get refreshed almost instantly, so there's no need to attempt them."
       }
     },
-    types: { arena: "Arena", market: "Black Market", alliance: "Alliance", ap: "Consume AP", diamond: "Diamond", stamina: "Stamina", gather: "Gathering", gear: "Gear", hero: "Hero Shards", heal: "Healing", help: "Help Allies", building: "Building Power", research: "Research Power", troop: "Troop Power", rally: "Monster Dens", speedup: "Speedups", transport: "Transport", packs: "Buy Packs", other: "Other" },
+    types: { arena: "Arena", market: "Black Market", alliance: "Alliance", ap: "Consume AP", diamond: "Diamond", stamina: "Stamina", gather: "Gathering", gear: "Gear/Runes/Totems/Holystones", hero: "Hero Shards", heal: "Healing", help: "Help Allies", building: "Building Power", research: "Research Power", troop: "Troop Power", rally: "Monster Dens", speedup: "Speedups", transport: "Transport", packs: "Buy Packs", other: "Other" },
     questNames: {
       "Arena Challenge": "Arena Challenge",
       "Black Market": "Black Market",
@@ -100,7 +100,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Gather Iron",
       "Gather Stone": "Gather Stone",
       "Gather Wood": "Gather Wood",
-      "Get Gear Materials": "Get Gear Materials",
+      "Get Gear Materials": "Get Gear/Runes/Totems/Holystones Materials",
       "Get Hero Shard": "Get Hero Shard",
       "Heal Units": "Heal Units",
       "Help Allies": "Help Allies",
@@ -142,7 +142,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Evita le missioni con un segno \"?\". Come le cattive missioni, si aggiornano quasi istantaneamente, quindi non c'è bisogno di tentarle."
       }
     },
-    types: { arena: "Arena", market: "Mercato Nero", alliance: "Alleanza", ap: "Consuma PA", diamond: "Diamante", stamina: "Energia", gather: "Raccolta", gear: "Equipaggiamento", hero: "Frammenti Eroe", heal: "Cura", help: "Aiuto Alleati", building: "Potere Edifici", research: "Potere Ricerca", troop: "Potere Truppe", rally: "Covi di Mostri", speedup: "Accelerazioni", transport: "Trasporto", packs: "Pacchetti", other: "Altro" },
+    types: { arena: "Arena", market: "Mercato Nero", alliance: "Alleanza", ap: "Consuma PA", diamond: "Diamante", stamina: "Energia", gather: "Raccolta", gear: "Equipaggiamento/Rune/Totem/Pietre Sacre", hero: "Frammenti Eroe", heal: "Cura", help: "Aiuto Alleati", building: "Potere Edifici", research: "Potere Ricerca", troop: "Potere Truppe", rally: "Covi di Mostri", speedup: "Accelerazioni", transport: "Trasporto", packs: "Pacchetti", other: "Altro" },
     questNames: {
       "Arena Challenge": "Sfida in Arena",
       "Black Market": "Mercato Nero",
@@ -154,7 +154,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Raccogli Ferro",
       "Gather Stone": "Raccogli Pietra",
       "Gather Wood": "Raccogli Legno",
-      "Get Gear Materials": "Ottieni Materiali Equip.",
+      "Get Gear Materials": "Ottieni Materiali Equip./Rune/Totem/Pietre",
       "Get Hero Shard": "Ottieni Frammenti Eroe",
       "Heal Units": "Cura Unità",
       "Help Allies": "Aiuta Alleati",
@@ -196,7 +196,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Evite missões com um sinal \"?\". Como as missões ruins, elas se atualizam quase instantaneamente, então não há necessidade de tentá-las."
       }
     },
-    types: { arena: "Arena", market: "Mercado Negro", alliance: "Aliança", ap: "Consumir PA", diamond: "Diamante", stamina: "Estamina", gather: "Coleta", gear: "Equipamento", hero: "Fragmentos de Herói", heal: "Cura", help: "Ajuda de Aliados", building: "Poder de Construção", research: "Poder de Pesquisa", troop: "Poder de Tropas", rally: "Covis de Monstros", speedup: "Acelerações", transport: "Transporte", packs: "Pacotes", other: "Outro" },
+    types: { arena: "Arena", market: "Mercado Negro", alliance: "Aliança", ap: "Consumir PA", diamond: "Diamante", stamina: "Estamina", gather: "Coleta", gear: "Equipamento/Runas/Totens/Pedras Sagradas", hero: "Fragmentos de Herói", heal: "Cura", help: "Ajuda de Aliados", building: "Poder de Construção", research: "Poder de Pesquisa", troop: "Poder de Tropas", rally: "Covis de Monstros", speedup: "Acelerações", transport: "Transporte", packs: "Pacotes", other: "Outro" },
     questNames: {
       "Arena Challenge": "Desafio de Arena",
       "Black Market": "Mercado Negro",
@@ -208,7 +208,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Coletar Ferro",
       "Gather Stone": "Coletar Pedra",
       "Gather Wood": "Coletar Madeira",
-      "Get Gear Materials": "Obter Materiais de Equip.",
+      "Get Gear Materials": "Obter Materiais de Equip./Runas/Totens/Pedras",
       "Get Hero Shard": "Obter Fragmentos de Herói",
       "Heal Units": "Curar Unidades",
       "Help Allies": "Ajudar Aliados",
@@ -250,7 +250,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Vermeiden Sie Quests mit einem \"?\"-Zeichen. Wie schlechte Quests werden sie fast sofort aktualisiert, daher lohnt sich kein Versuch."
       }
     },
-    types: { arena: "Arena", market: "Schwarzmarkt", alliance: "Allianz", ap: "AP verbrauchen", diamond: "Diamant", stamina: "Ausdauer", gather: "Sammeln", gear: "Ausrüstung", hero: "Heldenscherben", heal: "Heilung", help: "Allianz-Hilfe", building: "Gebäudekraft", research: "Forschungskraft", troop: "Truppenkraft", rally: "Monsterhöhlen", speedup: "Beschleuniger", transport: "Transport", packs: "Pakete", other: "Andere" },
+    types: { arena: "Arena", market: "Schwarzmarkt", alliance: "Allianz", ap: "AP verbrauchen", diamond: "Diamant", stamina: "Ausdauer", gather: "Sammeln", gear: "Ausrüstung/Runen/Totems/Heiligtümer", hero: "Heldenscherben", heal: "Heilung", help: "Allianz-Hilfe", building: "Gebäudekraft", research: "Forschungskraft", troop: "Truppenkraft", rally: "Monsterhöhlen", speedup: "Beschleuniger", transport: "Transport", packs: "Pakete", other: "Andere" },
     questNames: {
       "Arena Challenge": "Arena-Herausforderung",
       "Black Market": "Schwarzmarkt",
@@ -262,7 +262,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Eisen sammeln",
       "Gather Stone": "Stein sammeln",
       "Gather Wood": "Holz sammeln",
-      "Get Gear Materials": "Ausrüstungsmaterial erhalten",
+      "Get Gear Materials": "Ausrüstung/Runen/Totems/Heiligtümer Material erhalten",
       "Get Hero Shard": "Heldenscherben erhalten",
       "Heal Units": "Einheiten heilen",
       "Help Allies": "Allianz-Hilfe leisten",
@@ -304,7 +304,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Избегайте квестов со знаком \"?\". Как и плохие квесты, они обновляются почти мгновенно, поэтому нет смысла их пытаться."
       }
     },
-    types: { arena: "Арена", market: "Рынок", alliance: "Альянс", ap: "Очки действия", diamond: "Алмазы", stamina: "Энергия", gather: "Сбор", gear: "Снаряжение", hero: "Герои", heal: "Лечение", help: "Помощь", building: "Стройка", research: "Наука", troop: "Войска", rally: "Логова", speedup: "Ускорители", transport: "Транспорт", packs: "Наборы", other: "Другое" },
+    types: { arena: "Арена", market: "Рынок", alliance: "Альянс", ap: "Очки действия", diamond: "Алмазы", stamina: "Энергия", gather: "Сбор", gear: "Снаряжение/Руны/Тотемы/Святыни", hero: "Герои", heal: "Лечение", help: "Помощь", building: "Стройка", research: "Наука", troop: "Войска", rally: "Логова", speedup: "Ускорители", transport: "Транспорт", packs: "Наборы", other: "Другое" },
     questNames: {
       "Arena Challenge": "Вызов на арене",
       "Black Market": "Черный рынок",
@@ -316,7 +316,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Сбор железа",
       "Gather Stone": "Сбор камня",
       "Gather Wood": "Сбор дерева",
-      "Get Gear Materials": "Получение материалов снаряжения",
+      "Get Gear Materials": "Получение материалов снаряжения/рун/тотемов/святынь",
       "Get Hero Shard": "Получение фрагментов героев",
       "Heal Units": "Лечение юнитов",
       "Help Allies": "Помощь союзникам",
@@ -358,7 +358,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Уникайте квестів зі знаком \"?\". Як і погані квести, вони оновлюються майже миттєво, тому немає сенсу їх намагатися."
       }
     },
-    types: { arena: "Арена", market: "Ринок", alliance: "Альянс", ap: "Очки дії", diamond: "Алмази", stamina: "Енергія", gather: "Збір", gear: "Спорядження", hero: "Герої", heal: "Лікування", help: "Допомога", building: "Будівництво", research: "Наука", troop: "Війська", rally: "Лігва", speedup: "Прискорювачі", transport: "Транспорт", packs: "Набори", other: "Інше" },
+    types: { arena: "Арена", market: "Ринок", alliance: "Альянс", ap: "Очки дії", diamond: "Алмази", stamina: "Енергія", gather: "Збір", gear: "Спорядження/Руни/Тотеми/Святилища", hero: "Герої", heal: "Лікування", help: "Допомога", building: "Будівництво", research: "Наука", troop: "Війська", rally: "Лігва", speedup: "Прискорювачі", transport: "Транспорт", packs: "Набори", other: "Інше" },
     questNames: {
       "Arena Challenge": "Виклик на арені",
       "Black Market": "Чорний ринок",
@@ -370,7 +370,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Збір заліза",
       "Gather Stone": "Збір каменю",
       "Gather Wood": "Збір дерева",
-      "Get Gear Materials": "Отримання матеріалів спорядження",
+      "Get Gear Materials": "Отримання матеріалів спорядження/рун/тотемів/святилищ",
       "Get Hero Shard": "Отримання фрагментів героїв",
       "Heal Units": "Лікування юнітів",
       "Help Allies": "Допомога союзникам",
@@ -412,7 +412,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Évitez les quêtes avec un signe \"?\". Comme les mauvaises quêtes, elles sont actualisées presque instantanément, il n'y a donc pas besoin de les essayer."
       }
     },
-    types: { arena: "Arène", market: "Marché Noir", alliance: "Alliance", ap: "Consommer PA", diamond: "Diamant", stamina: "Stamina", gather: "Récolte", gear: "Équipement", hero: "Fragments de Héros", heal: "Soin", help: "Aide Alliés", building: "Puissance de Bâtiment", research: "Puissance de Recherche", troop: "Puissance de Troupes", rally: "Repaires de Monstres", speedup: "Accélérateurs", transport: "Transport", packs: "Packs", other: "Autre" },
+    types: { arena: "Arène", market: "Marché Noir", alliance: "Alliance", ap: "Consommer PA", diamond: "Diamant", stamina: "Stamina", gather: "Récolte", gear: "Équipement/Runes/Totems/Reliques", hero: "Fragments de Héros", heal: "Soin", help: "Aide Alliés", building: "Puissance de Bâtiment", research: "Puissance de Recherche", troop: "Puissance de Troupes", rally: "Repaires de Monstres", speedup: "Accélérateurs", transport: "Transport", packs: "Packs", other: "Autre" },
     questNames: {
       "Arena Challenge": "Défi d'Arène",
       "Black Market": "Marché Noir",
@@ -424,7 +424,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Récolter du Fer",
       "Gather Stone": "Récolter de la Pierre",
       "Gather Wood": "Récolter du Bois",
-      "Get Gear Materials": "Obtenir des Matériaux d'Équip.",
+      "Get Gear Materials": "Obtenir des Matériaux d'Équip./Runes/Totems/Reliques",
       "Get Hero Shard": "Obtenir des Fragments de Héros",
       "Heal Units": "Soigner des Unités",
       "Help Allies": "Aider les Alliés",
