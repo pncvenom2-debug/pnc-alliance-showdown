@@ -77,7 +77,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Recommended", not_recommended: "⚠️ Not Recommended", neutral: "Standard" },
     tips: {
       gatherQuest: "Before you send out your troops to gather:\nUse a resource gather speedup item\nSwitch to your economy page",
-      heroShard: "Before picking the quest, calculate the points from the cards (red, purple, blue) you already have. You can also exchange shards to help reach the requirement — 10 Gina shards from Trial Turret, Fiona shards from the Sapphire Shop, Gerolin shards from the Arena Shop and Arena chests, and Odell/Tutanhet shards from monsters."
+      heroShard: "Before picking the quest, calculate the points from the cards (red, purple, blue) you already have. You can also exchange shards to help reach the requirement — 10 Gina shards from Trial Turret, Fiona shards from the Sapphire Shop, Gerolin shards from the Arena Shop and Arena chests, and Odell/Tutanhet shards from monsters.",
+      rallyMonsterDens: "Perform rallies on a Level 7 Monster Den. This saves stamina compared to higher level dens."
     },
     info: {
       button: "Open information",
@@ -130,7 +131,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Consigliata", not_recommended: "⚠️ Non Consigliata", neutral: "Standard" },
     tips: {
       gatherQuest: "Prima di inviare le tue truppe a raccogliere:\nUsa un oggetto di velocità di raccolta risorse\nCambia sulla pagina economia",
-      heroShard: "Prima di scegliere la missione, calcola i punti dalle carte (rosso, viola, blu) che hai già. Puoi anche scambiare frammenti per raggiungere il requisito — 10 frammenti di Gina dalla Trial Turret, frammenti di Fiona dal Sapphire Shop, frammenti di Gerolin dall'Arena Shop e forzieri dell'Arena, e frammenti di Odell/Tutanhet dai mostri."
+      heroShard: "Prima di scegliere la missione, calcola i punti dalle carte (rosso, viola, blu) che hai già. Puoi anche scambiare frammenti per raggiungere il requisito — 10 frammenti di Gina dalla Trial Turret, frammenti di Fiona dal Sapphire Shop, frammenti di Gerolin dall'Arena Shop e forzieri dell'Arena, e frammenti di Odell/Tutanhet dai mostri.",
+      rallyMonsterDens: "Esegui rally su una Covile di Mostri di Livello 7. Questo risparmia energia rispetto a covili di livello superiore."
     },
     info: {
       button: "Apri informazioni",
@@ -183,7 +185,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Recomendada", not_recommended: "⚠️ Não Recomendada", neutral: "Padrão" },
     tips: {
       gatherQuest: "Antes de enviar suas tropas para coletar:\nUse um item de velocidade de coleta de recursos\nMude para a página de economia",
-      heroShard: "Antes de escolher a missão, calcule os pontos dos cartões (vermelho, roxo, azul) que você já tem. Você também pode trocar fragmentos para ajudar a atingir o requisito — 10 fragmentos de Gina da Trial Turret, fragmentos de Fiona da Sapphire Shop, fragmentos de Gerolin da Arena Shop e baús da Arena, e fragmentos de Odell/Tutanhet dos monstros."
+      heroShard: "Antes de escolher a missão, calcule os pontos dos cartões (vermelho, roxo, azul) que você já tem. Você também pode trocar fragmentos para ajudar a atingir o requisito — 10 fragmentos de Gina da Trial Turret, fragmentos de Fiona da Sapphire Shop, fragmentos de Gerolin da Arena Shop e baús da Arena, e fragmentos de Odell/Tutanhet dos monstros.",
+      rallyMonsterDens: "Realize ralis em uma Cova de Monstros Nível 7. Isso economiza estamina em comparação com covas de nível superior."
     },
     info: {
       button: "Abrir informações",
@@ -236,7 +239,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Empfohlen", not_recommended: "⚠️ Nicht Empfohlen", neutral: "Standard" },
     tips: {
       gatherQuest: "Bevor Sie Ihre Truppen zum Sammeln schicken:\nVerwenden Sie einen Ressourcen-Sammelverschnellerer\nWechseln Sie zur Wirtschaftsseite",
-      heroShard: "Bevor Sie die Quest auswählen, berechnen Sie die Punkte aus den Karten (rot, lila, blau), die Sie bereits haben. Sie können auch Scherben austauschen, um die Anforderung zu erfüllen — 10 Gina-Scherben vom Trial Turret, Fiona-Scherben vom Sapphire Shop, Gerolin-Scherben vom Arena Shop und Arena-Schatztruhen, und Odell/Tutanhet-Scherben von Monstern."
+      heroShard: "Bevor Sie die Quest auswählen, berechnen Sie die Punkte aus den Karten (rot, lila, blau), die Sie bereits haben. Sie können auch Scherben austauschen, um die Anforderung zu erfüllen — 10 Gina-Scherben vom Trial Turret, Fiona-Scherben vom Sapphire Shop, Gerolin-Scherben vom Arena Shop und Arena-Schatztruhen, und Odell/Tutanhet-Scherben von Monstern.",
+      rallyMonsterDens: "Führen Sie Angriffe auf eine Level-7-Monsterhöhle durch. Dies spart Ausdauer im Vergleich zu höherstufigen Höhlen."
     },
     info: {
       button: "Informationen öffnen",
@@ -289,7 +293,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Рекомендуется", not_recommended: "⚠️ Не рекомендуется", neutral: "Стандартно" },
     tips: {
       gatherQuest: "Перед отправкой войск на сбор:\nИспользуйте предмет ускорения сбора ресурсов\nПерейдите на страницу экономики",
-      heroShard: "Перед выбором квеста рассчитайте очки карт (красная, фиолетовая, синяя), которые у вас уже есть. Вы также можете обменять осколки, чтобы достичь требования — 10 осколков Гины из Trial Turret, осколки Фионы из Sapphire Shop, осколки Геролина из Arena Shop и сундуков Arena, и осколки Одделла/Тутанхета у монстров."
+      heroShard: "Перед выбором квеста рассчитайте очки карт (красная, фиолетовая, синяя), которые у вас уже есть. Вы также можете обменять осколки, чтобы достичь требования — 10 осколков Гины из Trial Turret, осколки Фионы из Sapphire Shop, осколки Геролина из Arena Shop и сундуков Arena, и осколки Одделла/Тутанхета у монстров.",
+      rallyMonsterDens: "Проводите атаки на Логова Монстров уровня 7. Это экономит энергию по сравнению с логовами более высокого уровня."
     },
     info: {
       button: "Открыть информацию",
@@ -342,7 +347,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Рекомендовано", not_recommended: "⚠️ Не рекомендовано", neutral: "Стандартно" },
     tips: {
       gatherQuest: "Перед відправленням військ на збір:\nВикористовуйте предмет прискорення збору ресурсів\nПерейдіть на сторінку економіки",
-      heroShard: "Перед вибором квесту розрахуйте очки карт (червона, фіолетова, синя), які у вас уже є. Ви також можете обміняти осколки, щоб досягти вимоги — 10 осколків Гіни з Trial Turret, осколки Фіони з Sapphire Shop, осколки Геролина з Arena Shop та сундуків Arena, і осколки Оддела/Тутанхета від монстрів."
+      heroShard: "Перед вибором квесту розрахуйте очки карт (червона, фіолетова, синя), які у вас уже є. Ви також можете обміняти осколки, щоб досягти вимоги — 10 осколків Гіни з Trial Turret, осколки Фіони з Sapphire Shop, осколки Геролина з Arena Shop та сундуків Arena, і осколки Оддела/Тутанхета від монстрів.",
+      rallyMonsterDens: "Проводьте атаки на Лігва Монстрів рівня 7. Це економить енергію порівняно з логовами вищого рівня."
     },
     info: {
       button: "Відкрити інформацію",
@@ -395,7 +401,8 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Recommandée", not_recommended: "⚠️ Non Recommandée", neutral: "Standard" },
     tips: {
       gatherQuest: "Avant d'envoyer vos troupes à la récolte:\nUtilisez un accélérateur de récolte de ressources\nPassez à la page économie",
-      heroShard: "Avant de choisir la quête, calculez les points des cartes (rouge, violet, bleu) que vous possédez déjà. Vous pouvez également échanger des éclats pour atteindre l'exigence — 10 éclats de Gina du Trial Turret, éclats de Fiona de la Sapphire Shop, éclats de Gerolin de l'Arena Shop et des coffres Arena, et éclats d'Odell/Tutanhet des monstres."
+      heroShard: "Avant de choisir la quête, calculez les points des cartes (rouge, violet, bleu) que vous possédez déjà. Vous pouvez également échanger des éclats pour atteindre l'exigence — 10 éclats de Gina du Trial Turret, éclats de Fiona de la Sapphire Shop, éclats de Gerolin de l'Arena Shop et des coffres Arena, et éclats d'Odell/Tutanhet des monstres.",
+      rallyMonsterDens: "Effectuez des rallyes sur un Repaire de Monstres Niveau 7. Cela économise l'énergie par rapport aux repaires de niveau supérieur."
     },
     info: {
       button: "Ouvrir les informations",
