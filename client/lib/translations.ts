@@ -80,7 +80,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Before picking the quest, calculate the points from the cards (red, purple, blue) you already have. You can also exchange shards to help reach the requirement — 10 Gina shards from Trial Turret, Fiona shards from the Sapphire Shop, Gerolin shards from the Arena Shop and Arena chests, and Odell/Tutanhet shards from monsters.",
       rallyMonsterDens: "Perform rallies on a Level 7 Monster Den. This saves stamina compared to higher level dens.",
       gearMaterials: "Calculate the points by checking the items in your bag before picking the quest. You can exchange totem items from the Sapphire Shop, rune items from Trial Turret and Apex Arena, and holystone items from the Oblivion War shop.",
-      helpAllies: "Just say you have this quest in alliance chat."
+      helpAllies: "Just say you have this quest in alliance chat.",
+      speedups: "Ensure you have speedups. You can get more (99) from the Trial Turret exchange. Try to complete this quest by healing troops during Oblivion War or Realm Expedition—it saves a lot of resources."
     },
     info: {
       button: "Open information",
@@ -136,7 +137,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Prima di scegliere la missione, calcola i punti dalle carte (rosso, viola, blu) che hai già. Puoi anche scambiare frammenti per raggiungere il requisito — 10 frammenti di Gina dalla Trial Turret, frammenti di Fiona dal Sapphire Shop, frammenti di Gerolin dall'Arena Shop e forzieri dell'Arena, e frammenti di Odell/Tutanhet dai mostri.",
       rallyMonsterDens: "Esegui rally su una Covile di Mostri di Livello 7. Questo risparmia energia rispetto a covili di livello superiore.",
       gearMaterials: "Calcola i punti controllando gli oggetti nella tua borsa prima di scegliere la missione. Puoi scambiare oggetti totem dal Sapphire Shop, oggetti rune da Trial Turret e Apex Arena, e oggetti pietra sacra dal negozio Oblivion War.",
-      helpAllies: "Basta dire che hai questa missione nella chat dell'alleanza."
+      helpAllies: "Basta dire che hai questa missione nella chat dell'alleanza.",
+      speedups: "Assicurati di avere accelerazioni. Puoi ottenere più (99) dallo scambio Trial Turret. Prova a completare questa missione curando le truppe durante Oblivion War o Realm Expedition, così risparmi molte risorse."
     },
     info: {
       button: "Apri informazioni",
@@ -192,7 +194,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Antes de escolher a missão, calcule os pontos dos cartões (vermelho, roxo, azul) que você já tem. Você também pode trocar fragmentos para ajudar a atingir o requisito — 10 fragmentos de Gina da Trial Turret, fragmentos de Fiona da Sapphire Shop, fragmentos de Gerolin da Arena Shop e baús da Arena, e fragmentos de Odell/Tutanhet dos monstros.",
       rallyMonsterDens: "Realize ralis em uma Cova de Monstros Nível 7. Isso economiza estamina em comparação com covas de nível superior.",
       gearMaterials: "Calcule os pontos verificando os itens em sua mochila antes de escolher a missão. Você pode trocar itens totem da Sapphire Shop, itens de runa do Trial Turret e Apex Arena, e itens de pedra sagrada da loja Oblivion War.",
-      helpAllies: "Basta dizer que você tem esta missão no bate-papo da aliança."
+      helpAllies: "Basta dizer que você tem esta missão no bate-papo da aliança.",
+      speedups: "Certifique-se de que você tem acelerações. Você pode obter mais (99) da troca Trial Turret. Tente completar esta missão curando tropas durante Oblivion War ou Realm Expedition — isso economiza muitos recursos."
     },
     info: {
       button: "Abrir informações",
@@ -248,7 +251,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Bevor Sie die Quest auswählen, berechnen Sie die Punkte aus den Karten (rot, lila, blau), die Sie bereits haben. Sie können auch Scherben austauschen, um die Anforderung zu erfüllen — 10 Gina-Scherben vom Trial Turret, Fiona-Scherben vom Sapphire Shop, Gerolin-Scherben vom Arena Shop und Arena-Schatztruhen, und Odell/Tutanhet-Scherben von Monstern.",
       rallyMonsterDens: "Führen Sie Angriffe auf eine Level-7-Monsterhöhle durch. Dies spart Ausdauer im Vergleich zu höherstufigen Höhlen.",
       gearMaterials: "Berechnen Sie die Punkte, indem Sie die Gegenstände in Ihrer Tasche überprüfen, bevor Sie die Quest auswählen. Sie können Totem-Gegenstände aus dem Sapphire Shop, Runen-Gegenstände aus Trial Turret und Apex Arena und Heiligtum-Gegenstände aus dem Oblivion War-Shop austauschen.",
-      helpAllies: "Sagen Sie einfach, dass Sie diese Quest im Allianz-Chat haben."
+      helpAllies: "Sagen Sie einfach, dass Sie diese Quest im Allianz-Chat haben.",
+      speedups: "Stellen Sie sicher, dass Sie Beschleuniger haben. Sie können mehr (99) aus dem Trial Turret-Austausch erhalten. Versuchen Sie, diese Quest zu absolvieren, indem Sie Truppen während Oblivion War oder Realm Expedition heilen — das spart viele Ressourcen."
     },
     info: {
       button: "Informationen öffnen",
@@ -304,7 +308,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Перед выбором квеста рассчитайте очки карт (красная, фиолетовая, синяя), которые у вас уже есть. Вы также можете обменять осколки, чтобы достичь требования — 10 осколков Гины из Trial Turret, осколки Фионы из Sapphire Shop, осколки Геролина из Arena Shop и сундуков Arena, и осколки Одделла/Тутанхета у монстров.",
       rallyMonsterDens: "Проводите атаки на Логова Монстров уровня 7. Это экономит энергию по сравнению с логовами более высокого уровня.",
       gearMaterials: "Рассчитайте очки, проверив предметы в вашей сумке перед выбором квеста. Вы можете обменять тотемные предметы из Sapphire Shop, предметы рун из Trial Turret и Apex Arena, а также святилищные предметы из магазина Oblivion War.",
-      helpAllies: "Просто скажите, что у вас есть эта миссия в чате альянса."
+      helpAllies: "Просто скажите, что у вас есть эта миссия в чате альянса.",
+      speedups: "Убедитесь, что у вас есть ускорители. Вы можете получить больше (99) из обмена Trial Turret. Попробуйте завершить эту миссию, исцеляя войска во время Oblivion War или Realm Expedition — это экономит много ресурсов."
     },
     info: {
       button: "Открыть информацию",
@@ -360,7 +365,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Перед вибором квесту розрахуйте очки карт (червона, фіолетова, синя), які у вас уже є. Ви також можете обміняти осколки, щоб досягти вимоги — 10 осколків Гіни з Trial Turret, осколки Фіони з Sapphire Shop, осколки Геролина з Arena Shop та сундуків Arena, і осколки Оддела/Тутанхета від монстрів.",
       rallyMonsterDens: "Проводьте атаки на Лігва Монстрів рівня 7. Це економить енергію порівняно з логовами вищого рівня.",
       gearMaterials: "Розрахуйте очки, перевіривши предмети у вашій сумці перед вибором квесту. Ви можете обміняти предмети тотемів із Sapphire Shop, предмети рун з Trial Turret та Apex Arena, а також предмети святилищ з магазину Oblivion War.",
-      helpAllies: "Просто скажіть, що у вас є цей квест у чаті альянсу."
+      helpAllies: "Просто скажіть, що у вас є цей квест у чаті альянсу.",
+      speedups: "Переконайтеся, що у вас є прискорювачі. Ви можете отримати більше (99) з обміну Trial Turret. Спробуйте завершити цей квест, зцілюючи військо під час Oblivion War або Realm Expedition — це економить багато ресурсів."
     },
     info: {
       button: "Відкрити інформацію",
@@ -416,7 +422,8 @@ export const translations: Record<Language, Translations> = {
       heroShard: "Avant de choisir la quête, calculez les points des cartes (rouge, violet, bleu) que vous possédez déjà. Vous pouvez également échanger des éclats pour atteindre l'exigence — 10 éclats de Gina du Trial Turret, éclats de Fiona de la Sapphire Shop, éclats de Gerolin de l'Arena Shop et des coffres Arena, et éclats d'Odell/Tutanhet des monstres.",
       rallyMonsterDens: "Effectuez des rallyes sur un Repaire de Monstres Niveau 7. Cela économise l'énergie par rapport aux repaires de niveau supérieur.",
       gearMaterials: "Calculez les points en vérifiant les objets dans votre sac avant de choisir la quête. Vous pouvez échanger des objets totem de la Sapphire Shop, des objets rune du Trial Turret et Apex Arena, et des objets reliques de la boutique Oblivion War.",
-      helpAllies: "Dites simplement que vous avez cette quête dans le chat de l'alliance."
+      helpAllies: "Dites simplement que vous avez cette quête dans le chat de l'alliance.",
+      speedups: "Assurez-vous que vous avez des accélérateurs. Vous pouvez en obtenir plus (99) via l'échange Trial Turret. Essayez de compléter cette quête en soignant les troupes pendant Oblivion War ou Realm Expedition — cela économise beaucoup de ressources."
     },
     info: {
       button: "Ouvrir les informations",
