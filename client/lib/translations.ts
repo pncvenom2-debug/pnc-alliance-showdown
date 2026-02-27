@@ -81,7 +81,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Perform rallies on a Level 7 Monster Den. This saves stamina compared to higher level dens.",
       gearMaterials: "Calculate the points by checking the items in your bag before picking the quest. You can exchange totem items from the Sapphire Shop, rune items from Trial Turret and Apex Arena, and holystone items from the Oblivion War shop.",
       helpAllies: "Just say you have this quest in alliance chat.",
-      speedups: "Ensure you have speedups. You can get more (99) from the Trial Turret exchange. Try to complete this quest by healing troops during Oblivion War or Realm Expedition—it saves a lot of resources."
+      speedups: "Ensure you have speedups. You can get more (99) from the Trial Turret exchange. Try to complete this quest by healing troops during Oblivion War or Realm Expedition—it saves a lot of resources.",
+      improveTroopPower: "Attempt this if and only if you have a healthy post-conflict recovery from Conquest of Lords."
     },
     info: {
       button: "Open information",
@@ -138,7 +139,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Esegui rally su una Covile di Mostri di Livello 7. Questo risparmia energia rispetto a covili di livello superiore.",
       gearMaterials: "Calcola i punti controllando gli oggetti nella tua borsa prima di scegliere la missione. Puoi scambiare oggetti totem dal Sapphire Shop, oggetti rune da Trial Turret e Apex Arena, e oggetti pietra sacra dal negozio Oblivion War.",
       helpAllies: "Basta dire che hai questa missione nella chat dell'alleanza.",
-      speedups: "Assicurati di avere accelerazioni. Puoi ottenere più (99) dallo scambio Trial Turret. Prova a completare questa missione curando le truppe durante Oblivion War o Realm Expedition, così risparmi molte risorse."
+      speedups: "Assicurati di avere accelerazioni. Puoi ottenere più (99) dallo scambio Trial Turret. Prova a completare questa missione curando le truppe durante Oblivion War o Realm Expedition, così risparmi molte risorse.",
+      improveTroopPower: "Tenta questa missione se e solo se hai un buon recupero post-conflitto dalla Conquista dei Signori."
     },
     info: {
       button: "Apri informazioni",
@@ -195,7 +197,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Realize ralis em uma Cova de Monstros Nível 7. Isso economiza estamina em comparação com covas de nível superior.",
       gearMaterials: "Calcule os pontos verificando os itens em sua mochila antes de escolher a missão. Você pode trocar itens totem da Sapphire Shop, itens de runa do Trial Turret e Apex Arena, e itens de pedra sagrada da loja Oblivion War.",
       helpAllies: "Basta dizer que você tem esta missão no bate-papo da aliança.",
-      speedups: "Certifique-se de que você tem acelerações. Você pode obter mais (99) da troca Trial Turret. Tente completar esta missão curando tropas durante Oblivion War ou Realm Expedition — isso economiza muitos recursos."
+      speedups: "Certifique-se de que você tem acelerações. Você pode obter mais (99) da troca Trial Turret. Tente completar esta missão curando tropas durante Oblivion War ou Realm Expedition — isso economiza muitos recursos.",
+      improveTroopPower: "Tente isso se e somente se você tiver uma recuperação pós-conflito saudável da Conquista dos Lordes."
     },
     info: {
       button: "Abrir informações",
@@ -252,7 +255,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Führen Sie Angriffe auf eine Level-7-Monsterhöhle durch. Dies spart Ausdauer im Vergleich zu höherstufigen Höhlen.",
       gearMaterials: "Berechnen Sie die Punkte, indem Sie die Gegenstände in Ihrer Tasche überprüfen, bevor Sie die Quest auswählen. Sie können Totem-Gegenstände aus dem Sapphire Shop, Runen-Gegenstände aus Trial Turret und Apex Arena und Heiligtum-Gegenstände aus dem Oblivion War-Shop austauschen.",
       helpAllies: "Sagen Sie einfach, dass Sie diese Quest im Allianz-Chat haben.",
-      speedups: "Stellen Sie sicher, dass Sie Beschleuniger haben. Sie können mehr (99) aus dem Trial Turret-Austausch erhalten. Versuchen Sie, diese Quest zu absolvieren, indem Sie Truppen während Oblivion War oder Realm Expedition heilen — das spart viele Ressourcen."
+      speedups: "Stellen Sie sicher, dass Sie Beschleuniger haben. Sie können mehr (99) aus dem Trial Turret-Austausch erhalten. Versuchen Sie, diese Quest zu absolvieren, indem Sie Truppen während Oblivion War oder Realm Expedition heilen — das spart viele Ressourcen.",
+      improveTroopPower: "Versuchen Sie dies nur, wenn Sie eine gute Erholung nach dem Konflikt durch die Eroberung der Herren haben."
     },
     info: {
       button: "Informationen öffnen",
@@ -309,7 +313,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Проводите атаки на Логова Монстров уровня 7. Это экономит энергию по сравнению с логовами более высокого уровня.",
       gearMaterials: "Рассчитайте очки, проверив предметы в вашей сумке перед выбором квеста. Вы можете обменять тотемные предметы из Sapphire Shop, предметы рун из Trial Turret и Apex Arena, а также святилищные предметы из магазина Oblivion War.",
       helpAllies: "Просто скажите, что у вас есть эта миссия в чате альянса.",
-      speedups: "Убедитесь, что у вас есть ускорители. Вы можете получить больше (99) из обмена Trial Turret. Попробуйте завершить эту миссию, исцеляя войска во время Oblivion War или Realm Expedition — это экономит много ресурсов."
+      speedups: "Убедитесь, что у вас есть ускорители. Вы можете получить больше (99) из обмена Trial Turret. Попробуйте завершить эту миссию, исцеляя войска во время Oblivion War или Realm Expedition — это экономит много ресурсов.",
+      improveTroopPower: "Попробуйте это только в том случае, если у вас есть здоровое восстановление после конфликта после Завоевания Лордов."
     },
     info: {
       button: "Открыть информацию",
