@@ -371,7 +371,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Проводьте атаки на Лігва Монстрів рівня 7. Це економить енергію порівняно з логовами вищого рівня.",
       gearMaterials: "Розрахуйте очки, перевіривши предмети у вашій сумці перед вибором квесту. Ви можете обміняти предмети тотемів із Sapphire Shop, предмети рун з Trial Turret та Apex Arena, а також предмети святилищ з магазину Oblivion War.",
       helpAllies: "Просто скажіть, що у вас є цей квест у чаті альянсу.",
-      speedups: "Переконайтеся, що у вас є прискорювачі. Ви можете отримати більше (99) з обміну Trial Turret. Спробуйте завершити цей квест, зцілюючи військо під час Oblivion War або Realm Expedition — це економить багато ресурсів."
+      speedups: "Переконайтеся, що у вас є прискорювачі. Ви можете отримати більше (99) з обміну Trial Turret. Спробуйте завершити цей квест, зцілюючи військо під час Oblivion War або Realm Expedition — це економить багато ресурсів.",
+      improveTroopPower: "Спробуйте це тільки якщо у вас є здорове відновлення після конфлікту від Завоювання Лордів."
     },
     info: {
       button: "Відкрити інформацію",
@@ -428,7 +429,8 @@ export const translations: Record<Language, Translations> = {
       rallyMonsterDens: "Effectuez des rallyes sur un Repaire de Monstres Niveau 7. Cela économise l'énergie par rapport aux repaires de niveau supérieur.",
       gearMaterials: "Calculez les points en vérifiant les objets dans votre sac avant de choisir la quête. Vous pouvez échanger des objets totem de la Sapphire Shop, des objets rune du Trial Turret et Apex Arena, et des objets reliques de la boutique Oblivion War.",
       helpAllies: "Dites simplement que vous avez cette quête dans le chat de l'alliance.",
-      speedups: "Assurez-vous que vous avez des accélérateurs. Vous pouvez en obtenir plus (99) via l'échange Trial Turret. Essayez de compléter cette quête en soignant les troupes pendant Oblivion War ou Realm Expedition — cela économise beaucoup de ressources."
+      speedups: "Assurez-vous que vous avez des accélérateurs. Vous pouvez en obtenir plus (99) via l'échange Trial Turret. Essayez de compléter cette quête en soignant les troupes pendant Oblivion War ou Realm Expedition — cela économise beaucoup de ressources.",
+      improveTroopPower: "Tentez ceci si et seulement si vous avez une récupération post-conflit saine de la Conquête des Seigneurs."
     },
     info: {
       button: "Ouvrir les informations",
