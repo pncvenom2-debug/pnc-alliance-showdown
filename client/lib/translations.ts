@@ -82,7 +82,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Calculate the points by checking the items in your bag before picking the quest. You can exchange totem items from the Sapphire Shop, rune items from Trial Turret and Apex Arena, and holystone items from the Oblivion War shop.",
       helpAllies: "Just say you have this quest in alliance chat.",
       speedups: "Ensure you have speedups. You can get more (99) from the Trial Turret exchange. Try to complete this quest by healing troops during Oblivion War or Realm Expedition—it saves a lot of resources.",
-      improveTroopPower: "Attempt this if and only if you have a healthy post-conflict recovery from Conquest of Lords."
+      improveTroopPower: "Attempt this if and only if you have a healthy post-conflict recovery from Conquest of Lords.",
+      transport: "Select this quest only if both you and the person you're sending resources to have a good-level Posthouse. Otherwise, the taxes will cause huge losses."
     },
     info: {
       button: "Open information",
@@ -140,7 +141,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Calcola i punti controllando gli oggetti nella tua borsa prima di scegliere la missione. Puoi scambiare oggetti totem dal Sapphire Shop, oggetti rune da Trial Turret e Apex Arena, e oggetti pietra sacra dal negozio Oblivion War.",
       helpAllies: "Basta dire che hai questa missione nella chat dell'alleanza.",
       speedups: "Assicurati di avere accelerazioni. Puoi ottenere più (99) dallo scambio Trial Turret. Prova a completare questa missione curando le truppe durante Oblivion War o Realm Expedition, così risparmi molte risorse.",
-      improveTroopPower: "Tenta questa missione se e solo se hai un buon recupero post-conflitto dalla Conquista dei Signori."
+      improveTroopPower: "Tenta questa missione se e solo se hai un buon recupero post-conflitto dalla Conquista dei Signori.",
+      transport: "Scegli questa missione solo se sia tu che la persona a cui stai inviando risorse avete una Posta di buon livello. Altrimenti, le tasse causeranno enormi perdite."
     },
     info: {
       button: "Apri informazioni",
@@ -198,7 +200,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Calcule os pontos verificando os itens em sua mochila antes de escolher a missão. Você pode trocar itens totem da Sapphire Shop, itens de runa do Trial Turret e Apex Arena, e itens de pedra sagrada da loja Oblivion War.",
       helpAllies: "Basta dizer que você tem esta missão no bate-papo da aliança.",
       speedups: "Certifique-se de que você tem acelerações. Você pode obter mais (99) da troca Trial Turret. Tente completar esta missão curando tropas durante Oblivion War ou Realm Expedition — isso economiza muitos recursos.",
-      improveTroopPower: "Tente isso se e somente se você tiver uma recuperação pós-conflito saudável da Conquista dos Lordes."
+      improveTroopPower: "Tente isso se e somente se você tiver uma recuperação pós-conflito saudável da Conquista dos Lordes.",
+      transport: "Escolha esta missão apenas se você e a pessoa para quem está enviando recursos tiverem uma Agência de Correios de bom nível. Caso contrário, os impostos causarão enormes perdas."
     },
     info: {
       button: "Abrir informações",
@@ -256,7 +259,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Berechnen Sie die Punkte, indem Sie die Gegenstände in Ihrer Tasche überprüfen, bevor Sie die Quest auswählen. Sie können Totem-Gegenstände aus dem Sapphire Shop, Runen-Gegenstände aus Trial Turret und Apex Arena und Heiligtum-Gegenstände aus dem Oblivion War-Shop austauschen.",
       helpAllies: "Sagen Sie einfach, dass Sie diese Quest im Allianz-Chat haben.",
       speedups: "Stellen Sie sicher, dass Sie Beschleuniger haben. Sie können mehr (99) aus dem Trial Turret-Austausch erhalten. Versuchen Sie, diese Quest zu absolvieren, indem Sie Truppen während Oblivion War oder Realm Expedition heilen — das spart viele Ressourcen.",
-      improveTroopPower: "Versuchen Sie dies nur, wenn Sie eine gute Erholung nach dem Konflikt durch die Eroberung der Herren haben."
+      improveTroopPower: "Versuchen Sie dies nur, wenn Sie eine gute Erholung nach dem Konflikt durch die Eroberung der Herren haben.",
+      transport: "Wählen Sie diese Quest nur, wenn Sie und die Person, an die Sie Ressourcen senden, ein gut ausgebautes Posthaus haben. Ansonsten verursachen die Steuern enorme Verluste."
     },
     info: {
       button: "Informationen öffnen",
@@ -314,7 +318,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Рассчитайте очки, проверив предметы в вашей сумке перед выбором квеста. Вы можете обменять тотемные предметы из Sapphire Shop, предметы рун из Trial Turret и Apex Arena, а также святилищные предметы из магазина Oblivion War.",
       helpAllies: "Просто скажите, что у вас есть эта миссия в чате альянса.",
       speedups: "Убедитесь, что у вас есть ускорители. Вы можете получить больше (99) из обмена Trial Turret. Попробуйте завершить эту миссию, исцеляя войска во время Oblivion War или Realm Expedition — это экономит много ресурсов.",
-      improveTroopPower: "Попробуйте это только в том случае, если у вас есть здоровое восстановление после конфликта после Завоевания Лордов."
+      improveTroopPower: "Попробуйте это только в том случае, если у вас есть здоровое восстановление после конфликта после Завоевания Лордов.",
+      transport: "Выбирайте эту миссию только если у вас и у человека, которому вы отправляете ресурсы, есть хороший уровень почтовой станции. Иначе налоги приведут к огромным потерям."
     },
     info: {
       button: "Открыть информацию",
@@ -372,7 +377,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Розрахуйте очки, перевіривши предмети у вашій сумці перед вибором квесту. Ви можете обміняти предмети тотемів із Sapphire Shop, предмети рун з Trial Turret та Apex Arena, а також предмети святилищ з магазину Oblivion War.",
       helpAllies: "Просто скажіть, що у вас є цей квест у чаті альянсу.",
       speedups: "Переконайтеся, що у вас є прискорювачі. Ви можете отримати більше (99) з обміну Trial Turret. Спробуйте завершити цей квест, зцілюючи військо під час Oblivion War або Realm Expedition — це економить багато ресурсів.",
-      improveTroopPower: "Спробуйте це тільки якщо у вас є здорове відновлення після конфлікту від Завоювання Лордів."
+      improveTroopPower: "Спробуйте це тільки якщо у вас є здорове відновлення після конфлікту від Завоювання Лордів.",
+      transport: "Виберіть цей квест тільки якщо у вас і у людини, якій ви надсилаєте ресурси, є гарний рівень Поштового відділення. Інакше податки спричинять величезні втрати."
     },
     info: {
       button: "Відкрити інформацію",
@@ -430,7 +436,8 @@ export const translations: Record<Language, Translations> = {
       gearMaterials: "Calculez les points en vérifiant les objets dans votre sac avant de choisir la quête. Vous pouvez échanger des objets totem de la Sapphire Shop, des objets rune du Trial Turret et Apex Arena, et des objets reliques de la boutique Oblivion War.",
       helpAllies: "Dites simplement que vous avez cette quête dans le chat de l'alliance.",
       speedups: "Assurez-vous que vous avez des accélérateurs. Vous pouvez en obtenir plus (99) via l'échange Trial Turret. Essayez de compléter cette quête en soignant les troupes pendant Oblivion War ou Realm Expedition — cela économise beaucoup de ressources.",
-      improveTroopPower: "Tentez ceci si et seulement si vous avez une récupération post-conflit saine de la Conquête des Seigneurs."
+      improveTroopPower: "Tentez ceci si et seulement si vous avez une récupération post-conflit saine de la Conquête des Seigneurs.",
+      transport: "Sélectionnez cette quête uniquement si vous et la personne à qui vous envoyez des ressources avez une Poste de bon niveau. Sinon, les taxes causeront d'énormes pertes."
     },
     info: {
       button: "Ouvrir les informations",
