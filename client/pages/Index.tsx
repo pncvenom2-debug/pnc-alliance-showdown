@@ -186,11 +186,6 @@ export default function Index() {
           <p className="text-sm text-muted-foreground">
             &copy; 2024 Alliance Showdown Tracker. Not affiliated with Puzzles & Chaos.
           </p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Documentation</a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="text-sm font-medium hover:text-primary transition-colors">Terms of Service</a>
-          </div>
         </div>
       </footer>
     </div>
