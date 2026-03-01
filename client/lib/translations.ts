@@ -63,6 +63,7 @@ export interface Translations {
   };
   types: Record<string, string>;
   questNames: Record<string, string>;
+  times: Record<string, string>;
 }
 
 export const translations: Record<Language, Translations> = {
@@ -123,6 +124,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Transport Wood among allies",
       "Buy Packs": "Buy Packs",
       "Gain Diamonds via Packs": "Gain Diamonds via Packs"
+    },
+    times: {
+      "12 hours": "12 hours",
+      "1 day": "1 day",
+      "2 days": "2 days",
+      "3 days": "3 days",
+      "4 days": "4 days",
+      "33 hours": "33 hours"
     }
   },
   it: {
@@ -182,6 +191,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Trasporta Legno tra gli Alleati",
       "Buy Packs": "Acquista Pacchetti",
       "Gain Diamonds via Packs": "Ottieni Diamanti dai Pacchetti"
+    },
+    times: {
+      "12 hours": "12 ore",
+      "1 day": "1 giorno",
+      "2 days": "2 giorni",
+      "3 days": "3 giorni",
+      "4 days": "4 giorni",
+      "33 hours": "33 ore"
     }
   },
   pt: {
@@ -241,6 +258,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Transportar Madeira entre Aliados",
       "Buy Packs": "Comprar Pacotes",
       "Gain Diamonds via Packs": "Ganhar Diamantes via Pacotes"
+    },
+    times: {
+      "12 hours": "12 horas",
+      "1 day": "1 dia",
+      "2 days": "2 dias",
+      "3 days": "3 dias",
+      "4 days": "4 dias",
+      "33 hours": "33 horas"
     }
   },
   de: {
@@ -300,6 +325,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Holz unter Verbündeten transportieren",
       "Buy Packs": "Pakete kaufen",
       "Gain Diamonds via Packs": "Diamanten über Pakete erhalten"
+    },
+    times: {
+      "12 hours": "12 Stunden",
+      "1 day": "1 Tag",
+      "2 days": "2 Tage",
+      "3 days": "3 Tage",
+      "4 days": "4 Tage",
+      "33 hours": "33 Stunden"
     }
   },
   ru: {
@@ -359,6 +392,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Транспорт дерева между союзниками",
       "Buy Packs": "Покупка наборов",
       "Gain Diamonds via Packs": "Получение алмазов из наборов"
+    },
+    times: {
+      "12 hours": "12 часов",
+      "1 day": "1 день",
+      "2 days": "2 дня",
+      "3 days": "3 дня",
+      "4 days": "4 дня",
+      "33 hours": "33 часа"
     }
   },
   uk: {
@@ -418,6 +459,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Транспорт дерева між союзниками",
       "Buy Packs": "Купівля наборів",
       "Gain Diamonds via Packs": "Отримання алмазів з наборів"
+    },
+    times: {
+      "12 hours": "12 годин",
+      "1 day": "1 день",
+      "2 days": "2 дні",
+      "3 days": "3 дні",
+      "4 days": "4 дні",
+      "33 hours": "33 години"
     }
   },
   fr: {
@@ -477,6 +526,14 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Transporter du Bois entre Alliés",
       "Buy Packs": "Acheter des Packs",
       "Gain Diamonds via Packs": "Gagner des Diamants via Packs"
+    },
+    times: {
+      "12 hours": "12 heures",
+      "1 day": "1 jour",
+      "2 days": "2 jours",
+      "3 days": "3 jours",
+      "4 days": "4 jours",
+      "33 hours": "33 heures"
     }
   }
 };

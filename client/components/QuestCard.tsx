@@ -128,7 +128,7 @@ export function QuestCard({ quest, onClick }: QuestCardProps) {
             )}
             <span className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground font-bold uppercase tracking-wider">
               <Clock className="h-3.5 w-3.5" />
-              {quest.time || t.card.noTime}
+              {quest.time ? (t.times[quest.time] || quest.time) : t.card.noTime}
             </span>
           </div>
         </div>

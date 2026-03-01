@@ -88,7 +88,7 @@ export function QuestModal({ quest, isOpen, onClose }: QuestModalProps) {
               <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">{t.modal.timeLimit}</span>
             </div>
             <p className="text-lg font-bold text-foreground">
-              {quest.time || t.card.noTime}
+              {quest.time ? (t.times[quest.time] || quest.time) : t.card.noTime}
             </p>
           </div>
 
