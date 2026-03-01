@@ -8,7 +8,7 @@ import { InfoModal } from "@/components/InfoModal";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useTranslation } from "@/hooks/use-translation";
 import { Quest, QuestType } from "@shared/api";
-import { Trophy, LayoutGrid, ListFilter, LayoutDashboard, Search, Info } from "lucide-react";
+import { Trophy, LayoutGrid, LayoutDashboard, Search, Info } from "lucide-react";
 
 export default function Index() {
   const { t } = useTranslation();
@@ -111,10 +111,6 @@ export default function Index() {
       <main className="container pt-8">
         {/* Welcome Section */}
         <div className="mb-10 text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary ring-1 ring-inset ring-primary/20 mb-4">
-            <ListFilter className="h-3 w-3" />
-            {t.welcome.badge}
-          </div>
           <h2 className="text-4xl font-extrabold tracking-tight lg:text-5xl">{t.welcome.title}</h2>
           <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
             {t.welcome.subtitle}
