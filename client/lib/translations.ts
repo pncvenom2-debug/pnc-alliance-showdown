@@ -52,7 +52,14 @@ export interface Translations {
   tips: {
     gatherQuest: string;
     heroShard: string;
+    rallyMonsterDens: string;
+    gearMaterials: string;
+    helpAllies: string;
+    speedups: string;
+    improveTroopPower: string;
+    transport: string;
   };
+  notes: Record<string, string>;
   info: {
     button: string;
     slides: {
@@ -132,6 +139,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 days",
       "4 days": "4 days",
       "33 hours": "33 hours"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Challenge other players in the Arena. Winning is not required, only completion.",
+      "Best performed during the Arena event for double rewards.": "Best performed during the Arena event for double rewards.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Purchase items from the Black Market. Focus on resources or speedups you need.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Consider using AP potions if you're close to completion but running out of natural recovery.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "High-value quest. This is a personal quest that requires actual purchases in the game store.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfect for large upgrades or during diamond spending events.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "One of the most efficient high-point quests. Save your troop training speedups for this specific quest."
     }
   },
   it: {
@@ -199,6 +217,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 giorni",
       "4 days": "4 giorni",
       "33 hours": "33 ore"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Sfida altri giocatori nell'Arena. Non è necessario vincere, solo completare.",
+      "Best performed during the Arena event for double rewards.": "Meglio eseguito durante l'evento Arena per il doppio delle ricompense.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Acquista articoli dal Mercato Nero. Concentrati su risorse o accelerazioni di cui hai bisogno.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Usa PA per attaccare mostri sulla mappa. È meglio cacciare mostri che forniscono materiali di cui hai bisogno per la progressione.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Considera l'utilizzo di pozioni PA se sei vicino al completamento ma stai esaurendo la guarigione naturale.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Cura le truppe ferite nell'infermeria. Puoi combattere mostri di basso livello per creare intenzionalmente piccole perdite se necessario.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Missione di alto valore. Questa è una missione personale che richiede acquisti effettivi nel negozio del gioco.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfetto per grandi upgrade o durante gli eventi di spesa di diamanti.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Una delle missioni ad alto punteggio più efficienti. Salva i tuoi acceleratori di addestramento truppe per questa missione specifica."
     }
   },
   pt: {
@@ -266,6 +295,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 dias",
       "4 days": "4 dias",
       "33 hours": "33 horas"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Desafie outros jogadores na Arena. Ganhar não é obrigatório, apenas completar.",
+      "Best performed during the Arena event for double rewards.": "Melhor realizado durante o evento Arena para recompensas dobradas.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Compre itens do Mercado Negro. Concentre-se em recursos ou velocidades que você precisa.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Use PA para atacar monstros no mapa. É melhor caçar monstros que fornecem materiais que você precisa para progredir.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Considere usar poções de PA se estiver próximo de terminar, mas sem recuperação natural.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Cure tropas feridas na enfermaria. Você pode lutar contra monstros de baixo nível para criar pequenas perdas intencionalmente, se necessário.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Missão de alto valor. Esta é uma missão pessoal que requer compras reais na loja do jogo.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfeito para grandes atualizações ou durante eventos de gasto de diamantes.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Uma das missões de alto valor mais eficientes. Salve seus aceleradores de treinamento de tropas para esta missão específica."
     }
   },
   de: {
@@ -333,6 +373,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 Tage",
       "4 days": "4 Tage",
       "33 hours": "33 Stunden"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Fordern Sie andere Spieler in der Arena heraus. Ein Sieg ist nicht erforderlich, nur die Fertigstellung.",
+      "Best performed during the Arena event for double rewards.": "Beste Leistung während des Arena-Events für doppelte Belohnungen.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Kaufen Sie Artikel vom Schwarzmarkt. Konzentrieren Sie sich auf Ressourcen oder Beschleuniger, die Sie benötigen.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Verwenden Sie AP, um Monster auf der Karte anzugreifen. Es ist am besten, Monster zu jagen, die die Materialien bereitstellen, die Sie zum Vorankommen benötigen.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Verwenden Sie AP-Tränke, wenn Sie der Fertigstellung nahe sind, aber keine natürliche Genesung mehr haben.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Heilen Sie verwundete Truppen in der Krankenstation. Sie können gegen schwache Monster kämpfen, um bei Bedarf absichtlich kleine Verluste zu verursachen.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Quest mit hohem Wert. Dies ist eine persönliche Quest, die echte Käufe im Spieleshop erfordert.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfekt für große Upgrades oder während Diamond-Ausgabenereignissen.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Eine der effizientesten High-Point-Quests. Speichern Sie Ihre Truppenschulung-Beschleuniger für diese spezifische Quest."
     }
   },
   ru: {
@@ -400,6 +451,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 дня",
       "4 days": "4 дня",
       "33 hours": "33 часа"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Вызовите других игроков на арене. Победа не требуется, только завершение.",
+      "Best performed during the Arena event for double rewards.": "Лучше всего выполнить во время события Arena за двойные награды.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Покупайте предметы на Черном рынке. Сосредоточьтесь на ресурсах или ускорениях, которые вам нужны.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Используйте ОД для атаки на монстров на карте. Лучше всего охотиться на монстров, которые дают материалы, необходимые для прогрессии.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Рассмотрите возможность использования зелий ОД, если вы близки к завершению, но заканчивается естественное восстановление.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Лечите раненые войска в лазарете. Вы можете сражаться с монстрами низкого уровня, чтобы намеренно создавать небольшие потери, если необходимо.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Высокоценный квест. Это личный квест, требующий реальных покупок в игровом магазине.",
+      "Perfect for large upgrades or during diamond spending events.": "Идеально подходит для больших обновлений или во время событий траты алмазов.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Один из наиболее эффективных высокоточечных квестов. Сохраните ускорители обучения войск для этого конкретного квеста."
     }
   },
   uk: {
@@ -467,6 +529,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 дні",
       "4 days": "4 дні",
       "33 hours": "33 години"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Виклик іншим гравцям на арені. Перемога не потрібна, тільки завершення.",
+      "Best performed during the Arena event for double rewards.": "Найкраще виконується під час события Arena для подвійних нагород.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Купуйте предмети на Чорному ринку. Зосередьтесь на ресурсах або прискореннях, які вам потрібні.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Використовуйте ОД для атаки на монстрів на карті. Найкраще полювати на монстрів, які надають матеріали, необхідні для прогресу.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Розглядайте можливість використання зіль ОД, якщо ви близько до завершення, але закінчується природне відновлення.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Лікуйте поранених військо в лікарні. Ви можете битися з монстрами низького рівня, щоб навмисне створювати невеликі втрати, якщо потрібно.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Квест високої вартості. Це особистий квест, який вимагає фактичних покупок у грі.",
+      "Perfect for large upgrades or during diamond spending events.": "Ідеально для великих оновлень або під час подій витрат алмазів.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Один із найбільш ефективних високобальних квестів. Збережіть ваші прискорення навчання військ для цього конкретного квесту."
     }
   },
   fr: {
@@ -534,6 +607,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 jours",
       "4 days": "4 jours",
       "33 hours": "33 heures"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Défiez d'autres joueurs dans l'Arène. La victoire n'est pas nécessaire, seulement la complétion.",
+      "Best performed during the Arena event for double rewards.": "Mieux exécuté pendant l'événement Arena pour les récompenses doublées.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Achetez des articles au Marché Noir. Concentrez-vous sur les ressources ou les accélérateurs dont vous avez besoin.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Utilisez l'AP pour attaquer les monstres sur la carte. Il est préférable de chasser des monstres qui fournissent les matériaux dont vous avez besoin pour progresser.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Envisagez d'utiliser des potions d'AP si vous êtes proche de la complétion mais vous manquez de récupération naturelle.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Soignez les troupes blessées à l'infirmerie. Vous pouvez combattre des monstres de bas niveau pour créer intentionnellement des pertes mineures si nécessaire.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Quête de haute valeur. C'est une quête personnelle qui nécessite des achats réels dans le magasin du jeu.",
+      "Perfect for large upgrades or during diamond spending events.": "Parfait pour les grands mises à niveau ou lors d'événements de dépense de diamants.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "L'une des quêtes à haut pointage les plus efficaces. Économisez vos accélérateurs d'entraînement de troupes pour cette quête spécifique."
     }
   },
   id: {
@@ -601,6 +685,17 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 hari",
       "4 days": "4 hari",
       "33 hours": "33 jam"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Tantang pemain lain di Arena. Menang tidak diperlukan, hanya penyelesaian.",
+      "Best performed during the Arena event for double rewards.": "Paling baik dilakukan selama acara Arena untuk hadiah ganda.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Beli item dari Pasar Gelap. Fokus pada sumber daya atau percepatan yang Anda butuhkan.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Gunakan AP untuk menyerang monster di peta. Yang terbaik adalah berburu monster yang menyediakan materi yang Anda butuhkan untuk maju.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Pertimbangkan menggunakan ramuan AP jika Anda mendekati penyelesaian tetapi kehabisan pemulihan alami.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Sembuhkan pasukan yang terluka di rumah sakit. Anda dapat berperang dengan monster level rendah untuk sengaja menciptakan korban ringan jika diperlukan.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Misi bernilai tinggi. Ini adalah misi pribadi yang memerlukan pembelian aktual di toko permainan.",
+      "Perfect for large upgrades or during diamond spending events.": "Sempurna untuk upgrade besar atau selama acara pengeluaran berlian.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Salah satu misi poin tinggi paling efisien. Simpan percepatan pelatihan pasukan Anda untuk misi spesifik ini."
     }
   }
 };
