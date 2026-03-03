@@ -80,18 +80,18 @@ export default function Index() {
     <div className="min-h-screen pb-20">
       {/* Header Section */}
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg shadow-primary/20">
+        <div className="container flex flex-col sm:flex-row h-auto sm:h-16 items-center justify-between gap-3 sm:gap-0 py-3 sm:py-0">
+          <div className="flex items-center gap-2 min-w-0">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg shadow-primary/20 flex-shrink-0">
               <Trophy className="h-6 w-6" />
             </div>
-            <div className="flex flex-col">
-              <h1 className="text-lg font-bold leading-none tracking-tight">{t.header.title}</h1>
-              <span className="text-xs text-muted-foreground font-medium uppercase tracking-widest">{t.header.subtitle}</span>
+            <div className="flex flex-col min-w-0">
+              <h1 className="text-base sm:text-lg font-bold leading-tight tracking-tight truncate">{t.header.title}</h1>
+              <span className="text-[10px] sm:text-xs text-muted-foreground font-medium uppercase tracking-widest truncate">{t.header.subtitle}</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <button
               onClick={() => setIsInfoOpen(true)}
               className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary ring-2 ring-white/10 hover:ring-primary/30 transition-all hover:bg-secondary/80"
@@ -101,18 +101,18 @@ export default function Index() {
               <Info className="h-4 w-4 text-muted-foreground hover:text-primary" />
             </button>
             <LanguageSwitcher />
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary ring-2 ring-white/10">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary ring-2 ring-white/10 flex-shrink-0">
               <span className="text-[10px] font-bold text-primary">JD</span>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="container pt-8">
+      <main className="container pt-6 sm:pt-8">
         {/* Welcome Section */}
-        <div className="mb-10 text-center lg:text-left">
-          <h2 className="text-4xl font-extrabold tracking-tight lg:text-5xl">{t.welcome.title}</h2>
-          <p className="mt-3 text-lg text-muted-foreground max-w-2xl">
+        <div className="mb-8 sm:mb-10 text-center lg:text-left px-2 sm:px-0">
+          <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight lg:text-5xl">{t.welcome.title}</h2>
+          <p className="mt-2 sm:mt-3 text-base sm:text-lg text-muted-foreground max-w-2xl">
             {t.welcome.subtitle}
           </p>
         </div>
@@ -128,14 +128,14 @@ export default function Index() {
         />
 
         {/* Grid Stats */}
-        <div className="mb-6 flex items-center justify-between text-sm">
-          <div className="flex items-center gap-4 text-muted-foreground">
+        <div className="mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0 text-xs sm:text-sm px-2 sm:px-0">
+          <div className="flex items-center gap-3 sm:gap-4 text-muted-foreground">
             <span className="flex items-center gap-1.5">
-              <LayoutGrid className="h-4 w-4" />
-              {t.stats.showing.replace("{count}", filteredAndSortedQuests.length.toString())}
+              <LayoutGrid className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <span className="text-xs sm:text-sm">{t.stats.showing.replace("{count}", filteredAndSortedQuests.length.toString())}</span>
             </span>
           </div>
-          <div className="flex items-center gap-2 font-semibold text-primary uppercase tracking-tighter text-xs">
+          <div className="flex items-center gap-2 font-semibold text-primary uppercase tracking-tighter text-[10px] sm:text-xs">
             {t.stats.sorting
               .replace("{sortBy}", t.filters[sortBy as keyof typeof t.filters] || sortBy)
               .replace("{order}", sortOrder === "asc" ? t.stats.asc : t.stats.desc)}
@@ -144,22 +144,26 @@ export default function Index() {
 
         {/* Quest Grid */}
         {filteredAndSortedQuests.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredAndSortedQuests.map((quest) => (
-              <QuestCard
-                key={quest.id}
-                quest={quest}
-                onClick={setSelectedQuest}
-              />
-            ))}
+          <div className="px-2 sm:px-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+              {filteredAndSortedQuests.map((quest) => (
+                <QuestCard
+                  key={quest.id}
+                  quest={quest}
+                  onClick={setSelectedQuest}
+                />
+              ))}
+            </div>
           </div>
         ) : (
-          <div className="flex min-h-[400px] flex-col items-center justify-center rounded-3xl border border-dashed border-border/50 bg-secondary/20">
-            <div className="h-20 w-20 rounded-full bg-secondary flex items-center justify-center mb-4">
-              <Search className="h-10 w-10 text-muted-foreground/30" />
+          <div className="px-2 sm:px-0">
+            <div className="flex min-h-[300px] sm:min-h-[400px] flex-col items-center justify-center rounded-2xl sm:rounded-3xl border border-dashed border-border/50 bg-secondary/20">
+              <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-secondary flex items-center justify-center mb-3 sm:mb-4">
+                <Search className="h-8 w-8 sm:h-10 sm:w-10 text-muted-foreground/30" />
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-center">{t.empty.title}</h3>
+              <p className="text-muted-foreground mt-2 text-center text-sm sm:text-base">{t.empty.subtitle}</p>
             </div>
-            <h3 className="text-xl font-bold">{t.empty.title}</h3>
-            <p className="text-muted-foreground mt-2">{t.empty.subtitle}</p>
           </div>
         )}
       </main>
@@ -177,9 +181,9 @@ export default function Index() {
       />
 
       {/* Footer / Mobile Nav */}
-      <footer className="mt-20 border-t border-border/40 py-10 bg-secondary/20">
-        <div className="container flex flex-col items-center justify-between gap-6 md:flex-row">
-          <p className="text-sm text-muted-foreground">
+      <footer className="mt-16 sm:mt-20 border-t border-border/40 py-8 sm:py-10 bg-secondary/20">
+        <div className="container flex flex-col items-center justify-center gap-4 px-4">
+          <p className="text-xs sm:text-sm text-muted-foreground text-center">
             &copy; 2024 Alliance Showdown Tracker. Not affiliated with Puzzles & Chaos.
           </p>
         </div>
