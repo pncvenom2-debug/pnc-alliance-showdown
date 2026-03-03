@@ -1,4 +1,4 @@
-export type Language = "en" | "it" | "pt" | "de" | "ru" | "uk" | "fr";
+export type Language = "en" | "it" | "pt" | "de" | "ru" | "uk" | "fr" | "id";
 
 export interface Translations {
   header: {
@@ -534,6 +534,73 @@ export const translations: Record<Language, Translations> = {
       "3 days": "3 jours",
       "4 days": "4 jours",
       "33 hours": "33 heures"
+    }
+  },
+  id: {
+    header: { title: "Pertunjukan Aliansi", subtitle: "Puzzles & Chaos", dashboard: "Dasbor" },
+    welcome: { badge: "Mesin Optimasi Misi v1.0", title: "Dasbor Data Misi", subtitle: "Visualisasikan, urutkan, dan filter setiap misi pertunjukan aliansi dengan mudah. Maksimalkan hadiah dan efisiensi Anda dengan analisis data real-time." },
+    filters: { search: "Cari misi...", all: "Semua Jenis", personal: "Personal (240)", sort: "Urutkan Berdasarkan", quest: "Nama Misi", type: "Jenis Misi", points: "Poin", time: "Waktu" },
+    stats: { showing: "Menampilkan {count} Misi", sorting: "Pengurutan berdasarkan {sortBy} ({order})", asc: "naik", desc: "turun" },
+    card: { requirement: "Persyaratan", points: "Poin", time: "Waktu", noTime: "Tanpa batas waktu" },
+    modal: { reward: "Hadiah", timeLimit: "Batas Waktu", tip: "Tip Bermanfaat", close: "Mengerti", noTip: "Tidak ada tip khusus tersedia untuk misi ini." },
+    empty: { title: "Tidak ada misi yang ditemukan", subtitle: "Coba sesuaikan filter atau kueri pencarian Anda." },
+    recommendation: { recommended: "✨ Direkomendasikan", not_recommended: "⚠️ Tidak Direkomendasikan", neutral: "Standar" },
+    tips: {
+      gatherQuest: "Sebelum mengirim pasukan Anda untuk mengumpulkan:\nGunakan item percepatan pengumpulan sumber daya\nBeralih ke halaman ekonomi",
+      heroShard: "Sebelum memilih misi, hitung poin dari kartu (merah, ungu, biru) yang sudah Anda miliki. Anda juga dapat menukar pecahan untuk membantu mencapai persyaratan — 10 pecahan Gina dari Trial Turret, pecahan Fiona dari Sapphire Shop, pecahan Gerolin dari Arena Shop dan peti Arena, dan pecahan Odell/Tutanhet dari monster.",
+      rallyMonsterDens: "Lakukan serangan pada Sarang Monster Level 7. Ini menghemat stamina dibandingkan dengan sarang level lebih tinggi.",
+      gearMaterials: "Hitung poin dengan memeriksa item di tas Anda sebelum memilih misi. Anda dapat menukar item totem dari Sapphire Shop, item rune dari Trial Turret dan Apex Arena, dan item batu suci dari toko Oblivion War.",
+      helpAllies: "Baru saja katakan bahwa Anda memiliki misi ini di obrolan aliansi.",
+      speedups: "Pastikan Anda memiliki percepatan. Anda bisa mendapatkan lebih banyak (99) dari pertukaran Trial Turret. Cobalah menyelesaikan misi ini dengan menyembuhkan pasukan selama Oblivion War atau Realm Expedition — ini menghemat banyak sumber daya.",
+      improveTroopPower: "Coba ini jika dan hanya jika Anda memiliki pemulihan pasca-konflik yang sehat dari Penaklukan Para Tuan.",
+      transport: "Pilih misi ini hanya jika Anda dan orang yang menerima sumber daya memiliki Kantor Pos tingkat baik. Jika tidak, pajak akan menyebabkan kerugian besar."
+    },
+    info: {
+      button: "Buka informasi",
+      slides: {
+        slide1: "Inilah cara papan misi terlihat untuk semua orang (tanda minus tidak terlihat). Misi baru muncul setiap 30 menit saat diperbarui, tetapi misi buruk diperbarui hampir secara instan, jadi mohon bersabar.",
+        slide2: "Ini adalah misi pribadi, hanya tersedia untuk Anda. Jika Anda tidak menyukainya, Anda memiliki kesempatan untuk menyegarkannya setiap 10 menit.",
+        slide3: "Hindari misi dengan tanda \"?\". Seperti misi buruk, mereka diperbarui hampir secara instan, jadi tidak perlu mencobanya."
+      }
+    },
+    types: { arena: "Arena", market: "Pasar Gelap", alliance: "Aliansi", ap: "Konsumsi AP", diamond: "Berlian", stamina: "Stamina", gather: "Pengumpulan", gear: "Perlengkapan/Rune/Totem/Batu Suci", hero: "Pecahan Pahlawan", heal: "Penyembuhan", help: "Bantuan Aliansi", building: "Kekuatan Bangunan", research: "Kekuatan Penelitian", troop: "Kekuatan Pasukan", rally: "Sarang Monster", speedup: "Percepatan", transport: "Transportasi", packs: "Paket", other: "Lainnya" },
+    questNames: {
+      "Arena Challenge": "Tantangan Arena",
+      "Black Market": "Pasar Gelap",
+      "Consume Alliance Coins": "Konsumsi Koin Aliansi",
+      "Consume AP": "Konsumsi AP",
+      "Consume Diamond": "Konsumsi Berlian",
+      "Consume Stamina": "Konsumsi Stamina",
+      "Gather Food": "Kumpulkan Makanan",
+      "Gather Iron": "Kumpulkan Besi",
+      "Gather Stone": "Kumpulkan Batu",
+      "Gather Wood": "Kumpulkan Kayu",
+      "Get Gear Materials": "Dapatkan Material Perlengkapan/Rune/Totem/Batu Suci",
+      "Get Hero Shard": "Dapatkan Pecahan Pahlawan",
+      "Heal Units": "Sembuhkan Unit",
+      "Help Allies": "Bantu Aliansi",
+      "Improve Building Power": "Tingkatkan Kekuatan Bangunan",
+      "Improve Research Power": "Tingkatkan Kekuatan Penelitian",
+      "Improve Troop Power": "Tingkatkan Kekuatan Pasukan",
+      "Rally on Monster Dens": "Serangan pada Sarang Monster",
+      "Research": "Penelitian",
+      "Speedups (Build/Tech/Training/Healing)": "Percepatan (Bangun/Tek/Latihan/Penyembuhan)",
+      "Speedup (Build/Tech/Training/Healing)": "Percepatan (Bangun/Tek/Latihan/Penyembuhan)",
+      "Transport Any Resources to Allies": "Transportasikan Sumber Daya Apa Pun ke Aliansi",
+      "Transport Food among allies": "Transportasikan Makanan di antara Aliansi",
+      "Transport Iron among allies": "Transportasikan Besi di antara Aliansi",
+      "Transport Stone among allies": "Transportasikan Batu di antara Aliansi",
+      "Transport Wood among allies": "Transportasikan Kayu di antara Aliansi",
+      "Buy Packs": "Beli Paket",
+      "Gain Diamonds via Packs": "Dapatkan Berlian melalui Paket"
+    },
+    times: {
+      "12 hours": "12 jam",
+      "1 day": "1 hari",
+      "2 days": "2 hari",
+      "3 days": "3 hari",
+      "4 days": "4 hari",
+      "33 hours": "33 jam"
     }
   }
 };
