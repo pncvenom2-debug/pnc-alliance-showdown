@@ -110,11 +110,8 @@ export default function Index() {
 
       <main className="container pt-6 sm:pt-8">
         {/* Welcome Section */}
-        <div className="mb-8 sm:mb-10 text-center lg:text-left px-2 sm:px-0">
+        <div className="mb-8 sm:mb-10 text-center px-2 sm:px-0">
           <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight lg:text-5xl">{t.welcome.title}</h2>
-          <p className="mt-2 sm:mt-3 text-base sm:text-lg text-muted-foreground max-w-2xl">
-            {t.welcome.subtitle}
-          </p>
         </div>
 
         {/* Filters */}
