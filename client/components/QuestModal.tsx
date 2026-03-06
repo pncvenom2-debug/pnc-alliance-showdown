@@ -88,7 +88,7 @@ export function QuestModal({ quest, isOpen, onClose }: QuestModalProps) {
               <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">{t.modal.timeLimit}</span>
             </div>
             <p className="text-lg font-bold text-foreground">
-              {quest.time || t.card.noTime}
+              {quest.time ? (t.times[quest.time] || quest.time) : t.card.noTime}
             </p>
           </div>
 
@@ -104,7 +104,7 @@ export function QuestModal({ quest, isOpen, onClose }: QuestModalProps) {
               <span className="text-[10px] font-bold uppercase tracking-widest">{t.modal.tip}</span>
             </div>
             <p className="text-sm leading-relaxed text-foreground/90 italic font-medium whitespace-pre-line">
-              {quest.type === "gather" ? t.tips.gatherQuest : (quest.note || t.modal.noTip)}
+              {quest.type === "gather" ? t.tips.gatherQuest : (quest.type === "rally" ? t.tips.rallyMonsterDens : (quest.type === "gear" ? t.tips.gearMaterials : (quest.type === "help" ? t.tips.helpAllies : (quest.type === "speedup" ? t.tips.speedups : (quest.type === "troop" ? t.tips.improveTroopPower : (quest.type === "transport" ? t.tips.transport : (quest.note ? (t.notes[quest.note] || quest.note) : t.modal.noTip)))))))}
             </p>
           </div>
         </div>

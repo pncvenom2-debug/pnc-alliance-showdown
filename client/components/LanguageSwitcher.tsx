@@ -18,23 +18,25 @@ const languages: { code: Language; name: string; flag: string }[] = [
   { code: "ru", name: "Русский", flag: "🇷🇺" },
   { code: "uk", name: "Українська", flag: "🇺🇦" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "id", name: "Bahasa Indonesia", flag: "🇮🇩" },
 ];
 
 export function LanguageSwitcher() {
   const { language, setLanguage } = useTranslation();
 
   return (
-    <div className="flex items-center gap-2">
-      <Languages className="h-4 w-4 text-muted-foreground" />
+    <div className="flex items-center gap-1.5 sm:gap-2">
+      <Languages className="h-4 w-4 text-muted-foreground hidden sm:block" />
       <Select value={language} onValueChange={(val) => setLanguage(val as Language)}>
-        <SelectTrigger className="w-[140px] h-9 bg-secondary/50 border-none focus:ring-1 focus:ring-primary text-xs font-bold uppercase tracking-wider">
+        <SelectTrigger className="w-auto sm:w-[140px] h-9 bg-secondary/50 border-none focus:ring-1 focus:ring-primary text-xs font-bold uppercase tracking-wider px-2 sm:px-3">
           <SelectValue />
         </SelectTrigger>
         <SelectContent align="end" className="bg-card border-border">
           {languages.map((lang) => (
             <SelectItem key={lang.code} value={lang.code} className="text-xs">
               <span className="mr-2">{lang.flag}</span>
-              {lang.name}
+              <span className="hidden sm:inline">{lang.name}</span>
+              <span className="sm:hidden">{lang.code.toUpperCase()}</span>
             </SelectItem>
           ))}
         </SelectContent>

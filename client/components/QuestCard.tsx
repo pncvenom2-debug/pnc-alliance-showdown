@@ -87,7 +87,7 @@ export function QuestCard({ quest, onClick }: QuestCardProps) {
     <div
       onClick={() => onClick(quest)}
       className={cn(
-        "group cursor-pointer relative overflow-hidden rounded-xl border bg-card p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10",
+        "group cursor-pointer relative overflow-hidden rounded-lg sm:rounded-xl border bg-card p-3 sm:p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10",
         isHighValue ? "border-primary/50 bg-gradient-to-br from-card to-primary/5" : cn("border-border", questColors.border)
       )}
     >
@@ -98,19 +98,19 @@ export function QuestCard({ quest, onClick }: QuestCardProps) {
       )} />
 
       <div className="relative flex flex-col gap-4">
-        <div className="flex items-start justify-between gap-4">
+        <div className="flex items-start justify-between gap-3 sm:gap-4">
           <div className={cn(
-            "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ring-1 ring-inset ring-white/10 shadow-sm transition-transform group-hover:scale-110 duration-300",
+            "flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg ring-1 ring-inset ring-white/10 shadow-sm transition-transform group-hover:scale-110 duration-300",
             isHighValue ? "bg-secondary text-primary" : cn(questColors.bg, questColors.text)
           )}>
-            <Icon className="h-5 w-5" />
+            <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
           </div>
-          <div className="flex flex-col items-end gap-2">
+          <div className="flex flex-col items-end gap-1.5 sm:gap-2">
             <span className={cn(
-              "text-lg font-black uppercase tracking-widest leading-tight",
+              "text-base sm:text-lg font-black uppercase tracking-widest leading-tight",
               isHighValue ? "text-primary" : questColors.text
             )}>
-              {quest.points} {t.card.points}
+              {quest.points} <span className="text-xs sm:text-sm">{t.card.points}</span>
             </span>
             {quest.recommendation && quest.recommendation !== "neutral" && (
               <div className={cn(
@@ -126,28 +126,28 @@ export function QuestCard({ quest, onClick }: QuestCardProps) {
                 </span>
               </div>
             )}
-            <span className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground font-bold uppercase tracking-wider">
-              <Clock className="h-3.5 w-3.5" />
-              {quest.time || t.card.noTime}
+            <span className="mt-0.5 sm:mt-1 flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs text-muted-foreground font-bold uppercase tracking-wider">
+              <Clock className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+              {quest.time ? (t.times[quest.time] || quest.time) : t.card.noTime}
             </span>
           </div>
         </div>
 
         <div>
-          <h3 className="font-bold leading-tight text-foreground group-hover:text-primary transition-colors mb-1">
+          <h3 className="text-sm sm:text-base font-bold leading-tight text-foreground group-hover:text-primary transition-colors mb-1.5">
             {t.questNames[quest.quest] || quest.quest}
           </h3>
           <div className="flex flex-col gap-0.5">
-            <span className="text-[10px] font-bold text-muted-foreground/60 uppercase tracking-widest">{t.card.requirement}</span>
-            <p className="text-sm font-bold text-foreground/90">
+            <span className="text-[9px] sm:text-[10px] font-bold text-muted-foreground/60 uppercase tracking-widest">{t.card.requirement}</span>
+            <p className="text-xs sm:text-sm font-bold text-foreground/90">
               {typeof quest.requirement === 'number' ? quest.requirement.toLocaleString() : quest.requirement}
             </p>
           </div>
         </div>
 
-        <div className="mt-2 flex items-center justify-between">
+        <div className="mt-2 sm:mt-3 flex items-center justify-between gap-2">
           <span className={cn(
-            "inline-flex items-center rounded-full px-2.5 py-0.5 text-[9px] font-bold ring-1 ring-inset ring-white/5 uppercase tracking-widest",
+            "inline-flex items-center rounded-full px-2 sm:px-2.5 py-0.5 text-[8px] sm:text-[9px] font-bold ring-1 ring-inset ring-white/5 uppercase tracking-widest truncate",
             isHighValue ? "bg-secondary text-primary" : cn(questColors.bg, questColors.text)
           )}>
             {t.types[quest.type] || quest.type}

@@ -1,4 +1,4 @@
-export type Language = "en" | "it" | "pt" | "de" | "ru" | "uk" | "fr";
+export type Language = "en" | "it" | "pt" | "de" | "ru" | "uk" | "fr" | "id";
 
 export interface Translations {
   header: {
@@ -52,7 +52,14 @@ export interface Translations {
   tips: {
     gatherQuest: string;
     heroShard: string;
+    rallyMonsterDens: string;
+    gearMaterials: string;
+    helpAllies: string;
+    speedups: string;
+    improveTroopPower: string;
+    transport: string;
   };
+  notes: Record<string, string>;
   info: {
     button: string;
     slides: {
@@ -63,6 +70,7 @@ export interface Translations {
   };
   types: Record<string, string>;
   questNames: Record<string, string>;
+  times: Record<string, string>;
 }
 
 export const translations: Record<Language, Translations> = {
@@ -77,7 +85,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Recommended", not_recommended: "⚠️ Not Recommended", neutral: "Standard" },
     tips: {
       gatherQuest: "Before you send out your troops to gather:\nUse a resource gather speedup item\nSwitch to your economy page",
-      heroShard: "Before picking the quest, calculate the points from the cards (red, purple, blue) you already have. You can also exchange shards to help reach the requirement — 10 Gina shards from Trial Turret, Fiona shards from the Sapphire Shop, Gerolin shards from the Arena Shop and Arena chests, and Odell/Tutanhet shards from monsters."
+      heroShard: "Before picking the quest, calculate the points from the cards (red, purple, blue) you already have. You can also exchange shards to help reach the requirement — 10 Gina shards from Trial Turret, Fiona shards from the Sapphire Shop, Gerolin shards from the Arena Shop and Arena chests, and Odell/Tutanhet shards from monsters.",
+      rallyMonsterDens: "Perform rallies on a Level 7 Monster Den. This saves stamina compared to higher level dens.",
+      gearMaterials: "Calculate the points by checking the items in your bag before picking the quest. You can exchange totem items from the Sapphire Shop, rune items from Trial Turret and Apex Arena, and holystone items from the Oblivion War shop.",
+      helpAllies: "Just say you have this quest in alliance chat.",
+      speedups: "Ensure you have speedups. You can get more (99) from the Trial Turret exchange. Try to complete this quest by healing troops during Oblivion War or Realm Expedition—it saves a lot of resources.",
+      improveTroopPower: "Attempt this if and only if you have a healthy post-conflict recovery from Conquest of Lords.",
+      transport: "Select this quest only if both you and the person you're sending resources to have a good-level Posthouse. Otherwise, the taxes will cause huge losses."
     },
     info: {
       button: "Open information",
@@ -87,7 +101,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Avoid quests with a \"?\" sign. Like bad quests, they get refreshed almost instantly, so there's no need to attempt them."
       }
     },
-    types: { arena: "Arena", market: "Black Market", alliance: "Alliance", ap: "Consume AP", diamond: "Diamond", stamina: "Stamina", gather: "Gathering", gear: "Gear", hero: "Hero Shards", heal: "Healing", help: "Help Allies", building: "Building Power", research: "Research Power", troop: "Troop Power", rally: "Monster Dens", speedup: "Speedups", transport: "Transport", packs: "Buy Packs", other: "Other" },
+    types: { arena: "Arena", market: "Black Market", alliance: "Alliance", ap: "Consume AP", diamond: "Diamond", stamina: "Stamina", gather: "Gathering", gear: "Gear/Runes/Totems/Holystones", hero: "Hero Shards", heal: "Healing", help: "Help Allies", building: "Building Power", research: "Research Power", troop: "Troop Power", rally: "Monster Dens", speedup: "Speedups", transport: "Transport", packs: "Buy Packs", other: "Other" },
     questNames: {
       "Arena Challenge": "Arena Challenge",
       "Black Market": "Black Market",
@@ -99,7 +113,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Gather Iron",
       "Gather Stone": "Gather Stone",
       "Gather Wood": "Gather Wood",
-      "Get Gear Materials": "Get Gear Materials",
+      "Get Gear Materials": "Get Gear/Runes/Totems/Holystones Materials",
       "Get Hero Shard": "Get Hero Shard",
       "Heal Units": "Heal Units",
       "Help Allies": "Help Allies",
@@ -117,6 +131,25 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Transport Wood among allies",
       "Buy Packs": "Buy Packs",
       "Gain Diamonds via Packs": "Gain Diamonds via Packs"
+    },
+    times: {
+      "12 hours": "12 hours",
+      "1 day": "1 day",
+      "2 days": "2 days",
+      "3 days": "3 days",
+      "4 days": "4 days",
+      "33 hours": "33 hours"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Challenge other players in the Arena. Winning is not required, only completion.",
+      "Best performed during the Arena event for double rewards.": "Best performed during the Arena event for double rewards.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Purchase items from the Black Market. Focus on resources or speedups you need.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Consider using AP potions if you're close to completion but running out of natural recovery.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "High-value quest. This is a personal quest that requires actual purchases in the game store.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfect for large upgrades or during diamond spending events.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "One of the most efficient high-point quests. Save your troop training speedups for this specific quest."
     }
   },
   it: {
@@ -130,7 +163,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Consigliata", not_recommended: "⚠️ Non Consigliata", neutral: "Standard" },
     tips: {
       gatherQuest: "Prima di inviare le tue truppe a raccogliere:\nUsa un oggetto di velocità di raccolta risorse\nCambia sulla pagina economia",
-      heroShard: "Prima di scegliere la missione, calcola i punti dalle carte (rosso, viola, blu) che hai già. Puoi anche scambiare frammenti per raggiungere il requisito — 10 frammenti di Gina dalla Trial Turret, frammenti di Fiona dal Sapphire Shop, frammenti di Gerolin dall'Arena Shop e forzieri dell'Arena, e frammenti di Odell/Tutanhet dai mostri."
+      heroShard: "Prima di scegliere la missione, calcola i punti dalle carte (rosso, viola, blu) che hai già. Puoi anche scambiare frammenti per raggiungere il requisito — 10 frammenti di Gina dalla Trial Turret, frammenti di Fiona dal Sapphire Shop, frammenti di Gerolin dall'Arena Shop e forzieri dell'Arena, e frammenti di Odell/Tutanhet dai mostri.",
+      rallyMonsterDens: "Esegui rally su una Covile di Mostri di Livello 7. Questo risparmia energia rispetto a covili di livello superiore.",
+      gearMaterials: "Calcola i punti controllando gli oggetti nella tua borsa prima di scegliere la missione. Puoi scambiare oggetti totem dal Sapphire Shop, oggetti rune da Trial Turret e Apex Arena, e oggetti pietra sacra dal negozio Oblivion War.",
+      helpAllies: "Basta dire che hai questa missione nella chat dell'alleanza.",
+      speedups: "Assicurati di avere accelerazioni. Puoi ottenere più (99) dallo scambio Trial Turret. Prova a completare questa missione curando le truppe durante Oblivion War o Realm Expedition, così risparmi molte risorse.",
+      improveTroopPower: "Tenta questa missione se e solo se hai un buon recupero post-conflitto dalla Conquista dei Signori.",
+      transport: "Scegli questa missione solo se sia tu che la persona a cui stai inviando risorse avete una Posta di buon livello. Altrimenti, le tasse causeranno enormi perdite."
     },
     info: {
       button: "Apri informazioni",
@@ -140,7 +179,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Evita le missioni con un segno \"?\". Come le cattive missioni, si aggiornano quasi istantaneamente, quindi non c'è bisogno di tentarle."
       }
     },
-    types: { arena: "Arena", market: "Mercato Nero", alliance: "Alleanza", ap: "Consuma PA", diamond: "Diamante", stamina: "Energia", gather: "Raccolta", gear: "Equipaggiamento", hero: "Frammenti Eroe", heal: "Cura", help: "Aiuto Alleati", building: "Potere Edifici", research: "Potere Ricerca", troop: "Potere Truppe", rally: "Covi di Mostri", speedup: "Accelerazioni", transport: "Trasporto", packs: "Pacchetti", other: "Altro" },
+    types: { arena: "Arena", market: "Mercato Nero", alliance: "Alleanza", ap: "Consuma PA", diamond: "Diamante", stamina: "Energia", gather: "Raccolta", gear: "Equipaggiamento/Rune/Totem/Pietre Sacre", hero: "Frammenti Eroe", heal: "Cura", help: "Aiuto Alleati", building: "Potere Edifici", research: "Potere Ricerca", troop: "Potere Truppe", rally: "Covi di Mostri", speedup: "Accelerazioni", transport: "Trasporto", packs: "Pacchetti", other: "Altro" },
     questNames: {
       "Arena Challenge": "Sfida in Arena",
       "Black Market": "Mercato Nero",
@@ -152,7 +191,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Raccogli Ferro",
       "Gather Stone": "Raccogli Pietra",
       "Gather Wood": "Raccogli Legno",
-      "Get Gear Materials": "Ottieni Materiali Equip.",
+      "Get Gear Materials": "Ottieni Materiali Equip./Rune/Totem/Pietre",
       "Get Hero Shard": "Ottieni Frammenti Eroe",
       "Heal Units": "Cura Unità",
       "Help Allies": "Aiuta Alleati",
@@ -170,6 +209,25 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Trasporta Legno tra gli Alleati",
       "Buy Packs": "Acquista Pacchetti",
       "Gain Diamonds via Packs": "Ottieni Diamanti dai Pacchetti"
+    },
+    times: {
+      "12 hours": "12 ore",
+      "1 day": "1 giorno",
+      "2 days": "2 giorni",
+      "3 days": "3 giorni",
+      "4 days": "4 giorni",
+      "33 hours": "33 ore"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Sfida altri giocatori nell'Arena. Non è necessario vincere, solo completare.",
+      "Best performed during the Arena event for double rewards.": "Meglio eseguito durante l'evento Arena per il doppio delle ricompense.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Acquista articoli dal Mercato Nero. Concentrati su risorse o accelerazioni di cui hai bisogno.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Usa PA per attaccare mostri sulla mappa. È meglio cacciare mostri che forniscono materiali di cui hai bisogno per la progressione.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Considera l'utilizzo di pozioni PA se sei vicino al completamento ma stai esaurendo la guarigione naturale.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Cura le truppe ferite nell'infermeria. Puoi combattere mostri di basso livello per creare intenzionalmente piccole perdite se necessario.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Missione di alto valore. Questa è una missione personale che richiede acquisti effettivi nel negozio del gioco.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfetto per grandi upgrade o durante gli eventi di spesa di diamanti.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Una delle missioni ad alto punteggio più efficienti. Salva i tuoi acceleratori di addestramento truppe per questa missione specifica."
     }
   },
   pt: {
@@ -183,7 +241,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Recomendada", not_recommended: "⚠️ Não Recomendada", neutral: "Padrão" },
     tips: {
       gatherQuest: "Antes de enviar suas tropas para coletar:\nUse um item de velocidade de coleta de recursos\nMude para a página de economia",
-      heroShard: "Antes de escolher a missão, calcule os pontos dos cartões (vermelho, roxo, azul) que você já tem. Você também pode trocar fragmentos para ajudar a atingir o requisito — 10 fragmentos de Gina da Trial Turret, fragmentos de Fiona da Sapphire Shop, fragmentos de Gerolin da Arena Shop e baús da Arena, e fragmentos de Odell/Tutanhet dos monstros."
+      heroShard: "Antes de escolher a missão, calcule os pontos dos cartões (vermelho, roxo, azul) que você já tem. Você também pode trocar fragmentos para ajudar a atingir o requisito — 10 fragmentos de Gina da Trial Turret, fragmentos de Fiona da Sapphire Shop, fragmentos de Gerolin da Arena Shop e baús da Arena, e fragmentos de Odell/Tutanhet dos monstros.",
+      rallyMonsterDens: "Realize ralis em uma Cova de Monstros Nível 7. Isso economiza estamina em comparação com covas de nível superior.",
+      gearMaterials: "Calcule os pontos verificando os itens em sua mochila antes de escolher a missão. Você pode trocar itens totem da Sapphire Shop, itens de runa do Trial Turret e Apex Arena, e itens de pedra sagrada da loja Oblivion War.",
+      helpAllies: "Basta dizer que você tem esta missão no bate-papo da aliança.",
+      speedups: "Certifique-se de que você tem acelerações. Você pode obter mais (99) da troca Trial Turret. Tente completar esta missão curando tropas durante Oblivion War ou Realm Expedition — isso economiza muitos recursos.",
+      improveTroopPower: "Tente isso se e somente se você tiver uma recuperação pós-conflito saudável da Conquista dos Lordes.",
+      transport: "Escolha esta missão apenas se você e a pessoa para quem está enviando recursos tiverem uma Agência de Correios de bom nível. Caso contrário, os impostos causarão enormes perdas."
     },
     info: {
       button: "Abrir informações",
@@ -193,7 +257,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Evite missões com um sinal \"?\". Como as missões ruins, elas se atualizam quase instantaneamente, então não há necessidade de tentá-las."
       }
     },
-    types: { arena: "Arena", market: "Mercado Negro", alliance: "Aliança", ap: "Consumir PA", diamond: "Diamante", stamina: "Estamina", gather: "Coleta", gear: "Equipamento", hero: "Fragmentos de Herói", heal: "Cura", help: "Ajuda de Aliados", building: "Poder de Construção", research: "Poder de Pesquisa", troop: "Poder de Tropas", rally: "Covis de Monstros", speedup: "Acelerações", transport: "Transporte", packs: "Pacotes", other: "Outro" },
+    types: { arena: "Arena", market: "Mercado Negro", alliance: "Aliança", ap: "Consumir PA", diamond: "Diamante", stamina: "Estamina", gather: "Coleta", gear: "Equipamento/Runas/Totens/Pedras Sagradas", hero: "Fragmentos de Herói", heal: "Cura", help: "Ajuda de Aliados", building: "Poder de Construção", research: "Poder de Pesquisa", troop: "Poder de Tropas", rally: "Covis de Monstros", speedup: "Acelerações", transport: "Transporte", packs: "Pacotes", other: "Outro" },
     questNames: {
       "Arena Challenge": "Desafio de Arena",
       "Black Market": "Mercado Negro",
@@ -205,7 +269,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Coletar Ferro",
       "Gather Stone": "Coletar Pedra",
       "Gather Wood": "Coletar Madeira",
-      "Get Gear Materials": "Obter Materiais de Equip.",
+      "Get Gear Materials": "Obter Materiais de Equip./Runas/Totens/Pedras",
       "Get Hero Shard": "Obter Fragmentos de Herói",
       "Heal Units": "Curar Unidades",
       "Help Allies": "Ajudar Aliados",
@@ -223,6 +287,25 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Transportar Madeira entre Aliados",
       "Buy Packs": "Comprar Pacotes",
       "Gain Diamonds via Packs": "Ganhar Diamantes via Pacotes"
+    },
+    times: {
+      "12 hours": "12 horas",
+      "1 day": "1 dia",
+      "2 days": "2 dias",
+      "3 days": "3 dias",
+      "4 days": "4 dias",
+      "33 hours": "33 horas"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Desafie outros jogadores na Arena. Ganhar não é obrigatório, apenas completar.",
+      "Best performed during the Arena event for double rewards.": "Melhor realizado durante o evento Arena para recompensas dobradas.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Compre itens do Mercado Negro. Concentre-se em recursos ou velocidades que você precisa.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Use PA para atacar monstros no mapa. É melhor caçar monstros que fornecem materiais que você precisa para progredir.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Considere usar poções de PA se estiver próximo de terminar, mas sem recuperação natural.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Cure tropas feridas na enfermaria. Você pode lutar contra monstros de baixo nível para criar pequenas perdas intencionalmente, se necessário.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Missão de alto valor. Esta é uma missão pessoal que requer compras reais na loja do jogo.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfeito para grandes atualizações ou durante eventos de gasto de diamantes.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Uma das missões de alto valor mais eficientes. Salve seus aceleradores de treinamento de tropas para esta missão específica."
     }
   },
   de: {
@@ -236,7 +319,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Empfohlen", not_recommended: "⚠️ Nicht Empfohlen", neutral: "Standard" },
     tips: {
       gatherQuest: "Bevor Sie Ihre Truppen zum Sammeln schicken:\nVerwenden Sie einen Ressourcen-Sammelverschnellerer\nWechseln Sie zur Wirtschaftsseite",
-      heroShard: "Bevor Sie die Quest auswählen, berechnen Sie die Punkte aus den Karten (rot, lila, blau), die Sie bereits haben. Sie können auch Scherben austauschen, um die Anforderung zu erfüllen — 10 Gina-Scherben vom Trial Turret, Fiona-Scherben vom Sapphire Shop, Gerolin-Scherben vom Arena Shop und Arena-Schatztruhen, und Odell/Tutanhet-Scherben von Monstern."
+      heroShard: "Bevor Sie die Quest auswählen, berechnen Sie die Punkte aus den Karten (rot, lila, blau), die Sie bereits haben. Sie können auch Scherben austauschen, um die Anforderung zu erfüllen — 10 Gina-Scherben vom Trial Turret, Fiona-Scherben vom Sapphire Shop, Gerolin-Scherben vom Arena Shop und Arena-Schatztruhen, und Odell/Tutanhet-Scherben von Monstern.",
+      rallyMonsterDens: "Führen Sie Angriffe auf eine Level-7-Monsterhöhle durch. Dies spart Ausdauer im Vergleich zu höherstufigen Höhlen.",
+      gearMaterials: "Berechnen Sie die Punkte, indem Sie die Gegenstände in Ihrer Tasche überprüfen, bevor Sie die Quest auswählen. Sie können Totem-Gegenstände aus dem Sapphire Shop, Runen-Gegenstände aus Trial Turret und Apex Arena und Heiligtum-Gegenstände aus dem Oblivion War-Shop austauschen.",
+      helpAllies: "Sagen Sie einfach, dass Sie diese Quest im Allianz-Chat haben.",
+      speedups: "Stellen Sie sicher, dass Sie Beschleuniger haben. Sie können mehr (99) aus dem Trial Turret-Austausch erhalten. Versuchen Sie, diese Quest zu absolvieren, indem Sie Truppen während Oblivion War oder Realm Expedition heilen — das spart viele Ressourcen.",
+      improveTroopPower: "Versuchen Sie dies nur, wenn Sie eine gute Erholung nach dem Konflikt durch die Eroberung der Herren haben.",
+      transport: "Wählen Sie diese Quest nur, wenn Sie und die Person, an die Sie Ressourcen senden, ein gut ausgebautes Posthaus haben. Ansonsten verursachen die Steuern enorme Verluste."
     },
     info: {
       button: "Informationen öffnen",
@@ -246,7 +335,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Vermeiden Sie Quests mit einem \"?\"-Zeichen. Wie schlechte Quests werden sie fast sofort aktualisiert, daher lohnt sich kein Versuch."
       }
     },
-    types: { arena: "Arena", market: "Schwarzmarkt", alliance: "Allianz", ap: "AP verbrauchen", diamond: "Diamant", stamina: "Ausdauer", gather: "Sammeln", gear: "Ausrüstung", hero: "Heldenscherben", heal: "Heilung", help: "Allianz-Hilfe", building: "Gebäudekraft", research: "Forschungskraft", troop: "Truppenkraft", rally: "Monsterhöhlen", speedup: "Beschleuniger", transport: "Transport", packs: "Pakete", other: "Andere" },
+    types: { arena: "Arena", market: "Schwarzmarkt", alliance: "Allianz", ap: "AP verbrauchen", diamond: "Diamant", stamina: "Ausdauer", gather: "Sammeln", gear: "Ausrüstung/Runen/Totems/Heiligtümer", hero: "Heldenscherben", heal: "Heilung", help: "Allianz-Hilfe", building: "Gebäudekraft", research: "Forschungskraft", troop: "Truppenkraft", rally: "Monsterhöhlen", speedup: "Beschleuniger", transport: "Transport", packs: "Pakete", other: "Andere" },
     questNames: {
       "Arena Challenge": "Arena-Herausforderung",
       "Black Market": "Schwarzmarkt",
@@ -258,7 +347,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Eisen sammeln",
       "Gather Stone": "Stein sammeln",
       "Gather Wood": "Holz sammeln",
-      "Get Gear Materials": "Ausrüstungsmaterial erhalten",
+      "Get Gear Materials": "Ausrüstung/Runen/Totems/Heiligtümer Material erhalten",
       "Get Hero Shard": "Heldenscherben erhalten",
       "Heal Units": "Einheiten heilen",
       "Help Allies": "Allianz-Hilfe leisten",
@@ -276,6 +365,25 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Holz unter Verbündeten transportieren",
       "Buy Packs": "Pakete kaufen",
       "Gain Diamonds via Packs": "Diamanten über Pakete erhalten"
+    },
+    times: {
+      "12 hours": "12 Stunden",
+      "1 day": "1 Tag",
+      "2 days": "2 Tage",
+      "3 days": "3 Tage",
+      "4 days": "4 Tage",
+      "33 hours": "33 Stunden"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Fordern Sie andere Spieler in der Arena heraus. Ein Sieg ist nicht erforderlich, nur die Fertigstellung.",
+      "Best performed during the Arena event for double rewards.": "Beste Leistung während des Arena-Events für doppelte Belohnungen.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Kaufen Sie Artikel vom Schwarzmarkt. Konzentrieren Sie sich auf Ressourcen oder Beschleuniger, die Sie benötigen.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Verwenden Sie AP, um Monster auf der Karte anzugreifen. Es ist am besten, Monster zu jagen, die die Materialien bereitstellen, die Sie zum Vorankommen benötigen.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Verwenden Sie AP-Tränke, wenn Sie der Fertigstellung nahe sind, aber keine natürliche Genesung mehr haben.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Heilen Sie verwundete Truppen in der Krankenstation. Sie können gegen schwache Monster kämpfen, um bei Bedarf absichtlich kleine Verluste zu verursachen.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Quest mit hohem Wert. Dies ist eine persönliche Quest, die echte Käufe im Spieleshop erfordert.",
+      "Perfect for large upgrades or during diamond spending events.": "Perfekt für große Upgrades oder während Diamond-Ausgabenereignissen.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Eine der effizientesten High-Point-Quests. Speichern Sie Ihre Truppenschulung-Beschleuniger für diese spezifische Quest."
     }
   },
   ru: {
@@ -289,7 +397,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Рекомендуется", not_recommended: "⚠️ Не рекомендуется", neutral: "Стандартно" },
     tips: {
       gatherQuest: "Перед отправкой войск на сбор:\nИспользуйте предмет ускорения сбора ресурсов\nПерейдите на страницу экономики",
-      heroShard: "Перед выбором квеста рассчитайте очки карт (красная, фиолетовая, синяя), которые у вас уже есть. Вы также можете обменять осколки, чтобы достичь требования — 10 осколков Гины из Trial Turret, осколки Фионы из Sapphire Shop, осколки Геролина из Arena Shop и сундуков Arena, и осколки Одделла/Тутанхета у монстров."
+      heroShard: "Перед выбором квеста рассчитайте очки карт (красная, фиолетовая, синяя), которые у вас уже есть. Вы также можете обменять осколки, чтобы достичь требования — 10 осколков Гины из Trial Turret, осколки Фионы из Sapphire Shop, осколки Геролина из Arena Shop и сундуков Arena, и осколки Одделла/Тутанхета у монстров.",
+      rallyMonsterDens: "Проводите атаки на Логова Монстров уровня 7. Это экономит энергию по сравнению с логовами более высокого уровня.",
+      gearMaterials: "Рассчитайте очки, проверив предметы в вашей сумке перед выбором квеста. Вы можете обменять тотемные предметы из Sapphire Shop, предметы рун из Trial Turret и Apex Arena, а также святилищные предметы из магазина Oblivion War.",
+      helpAllies: "Просто скажите, что у вас есть эта миссия в чате альянса.",
+      speedups: "Убедитесь, что у вас есть ускорители. Вы можете получить больше (99) из обмена Trial Turret. Попробуйте завершить эту миссию, исцеляя войска во время Oblivion War или Realm Expedition — это экономит много ресурсов.",
+      improveTroopPower: "Попробуйте это только в том случае, если у вас есть здоровое восстановление после конфликта после Завоевания Лордов.",
+      transport: "Выбирайте эту миссию только если у вас и у человека, которому вы отправляете ресурсы, есть хороший уровень почтовой станции. Иначе налоги приведут к огромным потерям."
     },
     info: {
       button: "Открыть информацию",
@@ -299,7 +413,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Избегайте квестов со знаком \"?\". Как и плохие квесты, они обновляются почти мгновенно, поэтому нет смысла их пытаться."
       }
     },
-    types: { arena: "Арена", market: "Рынок", alliance: "Альянс", ap: "Очки действия", diamond: "Алмазы", stamina: "Энергия", gather: "Сбор", gear: "Снаряжение", hero: "Герои", heal: "Лечение", help: "Помощь", building: "Стройка", research: "Наука", troop: "Войска", rally: "Логова", speedup: "Ускорители", transport: "Транспорт", packs: "Наборы", other: "Другое" },
+    types: { arena: "Арена", market: "Рынок", alliance: "Альянс", ap: "Очки действия", diamond: "Алмазы", stamina: "Энергия", gather: "Сбор", gear: "Снаряжение/Руны/Тотемы/Святыни", hero: "Герои", heal: "Лечение", help: "Помощь", building: "Стройка", research: "Наука", troop: "Войска", rally: "Логова", speedup: "Ускорители", transport: "Транспорт", packs: "Наборы", other: "Другое" },
     questNames: {
       "Arena Challenge": "Вызов на арене",
       "Black Market": "Черный рынок",
@@ -311,7 +425,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Сбор железа",
       "Gather Stone": "Сбор камня",
       "Gather Wood": "Сбор дерева",
-      "Get Gear Materials": "Получение материалов снаряжения",
+      "Get Gear Materials": "Получение материалов снаряжения/рун/тотемов/святынь",
       "Get Hero Shard": "Получение фрагментов героев",
       "Heal Units": "Лечение юнитов",
       "Help Allies": "Помощь союзникам",
@@ -329,6 +443,25 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Транспорт дерева между союзниками",
       "Buy Packs": "Покупка наборов",
       "Gain Diamonds via Packs": "Получение алмазов из наборов"
+    },
+    times: {
+      "12 hours": "12 часов",
+      "1 day": "1 день",
+      "2 days": "2 дня",
+      "3 days": "3 дня",
+      "4 days": "4 дня",
+      "33 hours": "33 часа"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Вызовите других игроков на арене. Победа не требуется, только завершение.",
+      "Best performed during the Arena event for double rewards.": "Лучше всего выполнить во время события Arena за двойные награды.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Покупайте предметы на Черном рынке. Сосредоточьтесь на ресурсах или ускорениях, которые вам нужны.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Используйте ОД для атаки на монстров на карте. Лучше всего охотиться на монстров, которые дают материалы, необходимые для прогрессии.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Рассмотрите возможность использования зелий ОД, если вы близки к завершению, но заканчивается естественное восстановление.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Лечите раненые войска в лазарете. Вы можете сражаться с монстрами низкого уровня, чтобы намеренно создавать небольшие потери, если необходимо.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Высокоценный квест. Это личный квест, требующий реальных покупок в игровом магазине.",
+      "Perfect for large upgrades or during diamond spending events.": "Идеально подходит для больших обновлений или во время событий траты алмазов.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Один из наиболее эффективных высокоточечных квестов. Сохраните ускорители обучения войск для этого конкретного квеста."
     }
   },
   uk: {
@@ -342,7 +475,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Рекомендовано", not_recommended: "⚠️ Не рекомендовано", neutral: "Стандартно" },
     tips: {
       gatherQuest: "Перед відправленням військ на збір:\nВикористовуйте предмет прискорення збору ресурсів\nПерейдіть на сторінку економіки",
-      heroShard: "Перед вибором квесту розрахуйте очки карт (червона, фіолетова, синя), які у вас уже є. Ви також можете обміняти осколки, щоб досягти вимоги — 10 осколків Гіни з Trial Turret, осколки Фіони з Sapphire Shop, осколки Геролина з Arena Shop та сундуків Arena, і осколки Оддела/Тутанхета від монстрів."
+      heroShard: "Перед вибором квесту розрахуйте очки карт (червона, фіолетова, синя), які у вас уже є. Ви також можете обміняти осколки, щоб досягти вимоги — 10 осколків Гіни з Trial Turret, осколки Фіони з Sapphire Shop, осколки Геролина з Arena Shop та сундуків Arena, і осколки Оддела/Тутанхета від монстрів.",
+      rallyMonsterDens: "Проводьте атаки на Лігва Монстрів рівня 7. Це економить енергію порівняно з логовами вищого рівня.",
+      gearMaterials: "Розрахуйте очки, перевіривши предмети у вашій сумці перед вибором квесту. Ви можете обміняти предмети тотемів із Sapphire Shop, предмети рун з Trial Turret та Apex Arena, а також предмети святилищ з магазину Oblivion War.",
+      helpAllies: "Просто скажіть, що у вас є цей квест у чаті альянсу.",
+      speedups: "Переконайтеся, що у вас є прискорювачі. Ви можете отримати більше (99) з обміну Trial Turret. Спробуйте завершити цей квест, зцілюючи військо під час Oblivion War або Realm Expedition — це економить багато ресурсів.",
+      improveTroopPower: "Спробуйте це тільки якщо у вас є здорове відновлення після конфлікту від Завоювання Лордів.",
+      transport: "Виберіть цей квест тільки якщо у вас і у людини, якій ви надсилаєте ресурси, є гарний рівень Поштового відділення. Інакше податки спричинять величезні втрати."
     },
     info: {
       button: "Відкрити інформацію",
@@ -352,7 +491,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Уникайте квестів зі знаком \"?\". Як і погані квести, вони оновлюються майже миттєво, тому немає сенсу їх намагатися."
       }
     },
-    types: { arena: "Арена", market: "Ринок", alliance: "Альянс", ap: "Очки дії", diamond: "Алмази", stamina: "Енергія", gather: "Збір", gear: "Спорядження", hero: "Герої", heal: "Лікування", help: "Допомога", building: "Будівництво", research: "Наука", troop: "Війська", rally: "Лігва", speedup: "Прискорювачі", transport: "Транспорт", packs: "Набори", other: "Інше" },
+    types: { arena: "Арена", market: "Ринок", alliance: "Альянс", ap: "Очки дії", diamond: "Алмази", stamina: "Енергія", gather: "Збір", gear: "Спорядження/Руни/Тотеми/Святилища", hero: "Герої", heal: "Лікування", help: "Допомога", building: "Будівництво", research: "Наука", troop: "Війська", rally: "Лігва", speedup: "Прискорювачі", transport: "Транспорт", packs: "Набори", other: "Інше" },
     questNames: {
       "Arena Challenge": "Виклик на арені",
       "Black Market": "Чорний ринок",
@@ -364,7 +503,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Збір заліза",
       "Gather Stone": "Збір каменю",
       "Gather Wood": "Збір дерева",
-      "Get Gear Materials": "Отримання матеріалів спорядження",
+      "Get Gear Materials": "Отримання матеріалів спорядження/рун/тотемів/святилищ",
       "Get Hero Shard": "Отримання фрагментів героїв",
       "Heal Units": "Лікування юнітів",
       "Help Allies": "Допомога союзникам",
@@ -382,6 +521,25 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Транспорт дерева між союзниками",
       "Buy Packs": "Купівля наборів",
       "Gain Diamonds via Packs": "Отримання алмазів з наборів"
+    },
+    times: {
+      "12 hours": "12 годин",
+      "1 day": "1 день",
+      "2 days": "2 дні",
+      "3 days": "3 дні",
+      "4 days": "4 дні",
+      "33 hours": "33 години"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Виклик іншим гравцям на арені. Перемога не потрібна, тільки завершення.",
+      "Best performed during the Arena event for double rewards.": "Найкраще виконується під час события Arena для подвійних нагород.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Купуйте предмети на Чорному ринку. Зосередьтесь на ресурсах або прискореннях, які вам потрібні.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Використовуйте ОД для атаки на монстрів на карті. Найкраще полювати на монстрів, які надають матеріали, необхідні для прогресу.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Розглядайте можливість використання зіль ОД, якщо ви близько до завершення, але закінчується природне відновлення.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Лікуйте поранених військо в лікарні. Ви можете битися з монстрами низького рівня, щоб навмисне створювати невеликі втрати, якщо потрібно.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Квест високої вартості. Це особистий квест, який вимагає фактичних покупок у грі.",
+      "Perfect for large upgrades or during diamond spending events.": "Ідеально для великих оновлень або під час подій витрат алмазів.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Один із найбільш ефективних високобальних квестів. Збережіть ваші прискорення навчання військ для цього конкретного квесту."
     }
   },
   fr: {
@@ -395,7 +553,13 @@ export const translations: Record<Language, Translations> = {
     recommendation: { recommended: "✨ Recommandée", not_recommended: "⚠️ Non Recommandée", neutral: "Standard" },
     tips: {
       gatherQuest: "Avant d'envoyer vos troupes à la récolte:\nUtilisez un accélérateur de récolte de ressources\nPassez à la page économie",
-      heroShard: "Avant de choisir la quête, calculez les points des cartes (rouge, violet, bleu) que vous possédez déjà. Vous pouvez également échanger des éclats pour atteindre l'exigence — 10 éclats de Gina du Trial Turret, éclats de Fiona de la Sapphire Shop, éclats de Gerolin de l'Arena Shop et des coffres Arena, et éclats d'Odell/Tutanhet des monstres."
+      heroShard: "Avant de choisir la quête, calculez les points des cartes (rouge, violet, bleu) que vous possédez déjà. Vous pouvez également échanger des éclats pour atteindre l'exigence — 10 éclats de Gina du Trial Turret, éclats de Fiona de la Sapphire Shop, éclats de Gerolin de l'Arena Shop et des coffres Arena, et éclats d'Odell/Tutanhet des monstres.",
+      rallyMonsterDens: "Effectuez des rallyes sur un Repaire de Monstres Niveau 7. Cela économise l'énergie par rapport aux repaires de niveau supérieur.",
+      gearMaterials: "Calculez les points en vérifiant les objets dans votre sac avant de choisir la quête. Vous pouvez échanger des objets totem de la Sapphire Shop, des objets rune du Trial Turret et Apex Arena, et des objets reliques de la boutique Oblivion War.",
+      helpAllies: "Dites simplement que vous avez cette quête dans le chat de l'alliance.",
+      speedups: "Assurez-vous que vous avez des accélérateurs. Vous pouvez en obtenir plus (99) via l'échange Trial Turret. Essayez de compléter cette quête en soignant les troupes pendant Oblivion War ou Realm Expedition — cela économise beaucoup de ressources.",
+      improveTroopPower: "Tentez ceci si et seulement si vous avez une récupération post-conflit saine de la Conquête des Seigneurs.",
+      transport: "Sélectionnez cette quête uniquement si vous et la personne à qui vous envoyez des ressources avez une Poste de bon niveau. Sinon, les taxes causeront d'énormes pertes."
     },
     info: {
       button: "Ouvrir les informations",
@@ -405,7 +569,7 @@ export const translations: Record<Language, Translations> = {
         slide3: "Évitez les quêtes avec un signe \"?\". Comme les mauvaises quêtes, elles sont actualisées presque instantanément, il n'y a donc pas besoin de les essayer."
       }
     },
-    types: { arena: "Arène", market: "Marché Noir", alliance: "Alliance", ap: "Consommer PA", diamond: "Diamant", stamina: "Stamina", gather: "Récolte", gear: "Équipement", hero: "Fragments de Héros", heal: "Soin", help: "Aide Alliés", building: "Puissance de Bâtiment", research: "Puissance de Recherche", troop: "Puissance de Troupes", rally: "Repaires de Monstres", speedup: "Accélérateurs", transport: "Transport", packs: "Packs", other: "Autre" },
+    types: { arena: "Arène", market: "Marché Noir", alliance: "Alliance", ap: "Consommer PA", diamond: "Diamant", stamina: "Stamina", gather: "Récolte", gear: "Équipement/Runes/Totems/Reliques", hero: "Fragments de Héros", heal: "Soin", help: "Aide Alliés", building: "Puissance de Bâtiment", research: "Puissance de Recherche", troop: "Puissance de Troupes", rally: "Repaires de Monstres", speedup: "Accélérateurs", transport: "Transport", packs: "Packs", other: "Autre" },
     questNames: {
       "Arena Challenge": "Défi d'Arène",
       "Black Market": "Marché Noir",
@@ -417,7 +581,7 @@ export const translations: Record<Language, Translations> = {
       "Gather Iron": "Récolter du Fer",
       "Gather Stone": "Récolter de la Pierre",
       "Gather Wood": "Récolter du Bois",
-      "Get Gear Materials": "Obtenir des Matériaux d'Équip.",
+      "Get Gear Materials": "Obtenir des Matériaux d'Équip./Runes/Totems/Reliques",
       "Get Hero Shard": "Obtenir des Fragments de Héros",
       "Heal Units": "Soigner des Unités",
       "Help Allies": "Aider les Alliés",
@@ -435,6 +599,103 @@ export const translations: Record<Language, Translations> = {
       "Transport Wood among allies": "Transporter du Bois entre Alliés",
       "Buy Packs": "Acheter des Packs",
       "Gain Diamonds via Packs": "Gagner des Diamants via Packs"
+    },
+    times: {
+      "12 hours": "12 heures",
+      "1 day": "1 jour",
+      "2 days": "2 jours",
+      "3 days": "3 jours",
+      "4 days": "4 jours",
+      "33 hours": "33 heures"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Défiez d'autres joueurs dans l'Arène. La victoire n'est pas nécessaire, seulement la complétion.",
+      "Best performed during the Arena event for double rewards.": "Mieux exécuté pendant l'événement Arena pour les récompenses doublées.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Achetez des articles au Marché Noir. Concentrez-vous sur les ressources ou les accélérateurs dont vous avez besoin.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Utilisez l'AP pour attaquer les monstres sur la carte. Il est préférable de chasser des monstres qui fournissent les matériaux dont vous avez besoin pour progresser.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Envisagez d'utiliser des potions d'AP si vous êtes proche de la complétion mais vous manquez de récupération naturelle.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Soignez les troupes blessées à l'infirmerie. Vous pouvez combattre des monstres de bas niveau pour créer intentionnellement des pertes mineures si nécessaire.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Quête de haute valeur. C'est une quête personnelle qui nécessite des achats réels dans le magasin du jeu.",
+      "Perfect for large upgrades or during diamond spending events.": "Parfait pour les grands mises à niveau ou lors d'événements de dépense de diamants.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "L'une des quêtes à haut pointage les plus efficaces. Économisez vos accélérateurs d'entraînement de troupes pour cette quête spécifique."
+    }
+  },
+  id: {
+    header: { title: "Pertunjukan Aliansi", subtitle: "Puzzles & Chaos", dashboard: "Dasbor" },
+    welcome: { badge: "Mesin Optimasi Misi v1.0", title: "Dasbor Data Misi", subtitle: "Visualisasikan, urutkan, dan filter setiap misi pertunjukan aliansi dengan mudah. Maksimalkan hadiah dan efisiensi Anda dengan analisis data real-time." },
+    filters: { search: "Cari misi...", all: "Semua Jenis", personal: "Personal (240)", sort: "Urutkan Berdasarkan", quest: "Nama Misi", type: "Jenis Misi", points: "Poin", time: "Waktu" },
+    stats: { showing: "Menampilkan {count} Misi", sorting: "Pengurutan berdasarkan {sortBy} ({order})", asc: "naik", desc: "turun" },
+    card: { requirement: "Persyaratan", points: "Poin", time: "Waktu", noTime: "Tanpa batas waktu" },
+    modal: { reward: "Hadiah", timeLimit: "Batas Waktu", tip: "Tip Bermanfaat", close: "Mengerti", noTip: "Tidak ada tip khusus tersedia untuk misi ini." },
+    empty: { title: "Tidak ada misi yang ditemukan", subtitle: "Coba sesuaikan filter atau kueri pencarian Anda." },
+    recommendation: { recommended: "✨ Direkomendasikan", not_recommended: "⚠️ Tidak Direkomendasikan", neutral: "Standar" },
+    tips: {
+      gatherQuest: "Sebelum mengirim pasukan Anda untuk mengumpulkan:\nGunakan item percepatan pengumpulan sumber daya\nBeralih ke halaman ekonomi",
+      heroShard: "Sebelum memilih misi, hitung poin dari kartu (merah, ungu, biru) yang sudah Anda miliki. Anda juga dapat menukar pecahan untuk membantu mencapai persyaratan — 10 pecahan Gina dari Trial Turret, pecahan Fiona dari Sapphire Shop, pecahan Gerolin dari Arena Shop dan peti Arena, dan pecahan Odell/Tutanhet dari monster.",
+      rallyMonsterDens: "Lakukan serangan pada Sarang Monster Level 7. Ini menghemat stamina dibandingkan dengan sarang level lebih tinggi.",
+      gearMaterials: "Hitung poin dengan memeriksa item di tas Anda sebelum memilih misi. Anda dapat menukar item totem dari Sapphire Shop, item rune dari Trial Turret dan Apex Arena, dan item batu suci dari toko Oblivion War.",
+      helpAllies: "Baru saja katakan bahwa Anda memiliki misi ini di obrolan aliansi.",
+      speedups: "Pastikan Anda memiliki percepatan. Anda bisa mendapatkan lebih banyak (99) dari pertukaran Trial Turret. Cobalah menyelesaikan misi ini dengan menyembuhkan pasukan selama Oblivion War atau Realm Expedition — ini menghemat banyak sumber daya.",
+      improveTroopPower: "Coba ini jika dan hanya jika Anda memiliki pemulihan pasca-konflik yang sehat dari Penaklukan Para Tuan.",
+      transport: "Pilih misi ini hanya jika Anda dan orang yang menerima sumber daya memiliki Kantor Pos tingkat baik. Jika tidak, pajak akan menyebabkan kerugian besar."
+    },
+    info: {
+      button: "Buka informasi",
+      slides: {
+        slide1: "Inilah cara papan misi terlihat untuk semua orang (tanda minus tidak terlihat). Misi baru muncul setiap 30 menit saat diperbarui, tetapi misi buruk diperbarui hampir secara instan, jadi mohon bersabar.",
+        slide2: "Ini adalah misi pribadi, hanya tersedia untuk Anda. Jika Anda tidak menyukainya, Anda memiliki kesempatan untuk menyegarkannya setiap 10 menit.",
+        slide3: "Hindari misi dengan tanda \"?\". Seperti misi buruk, mereka diperbarui hampir secara instan, jadi tidak perlu mencobanya."
+      }
+    },
+    types: { arena: "Arena", market: "Pasar Gelap", alliance: "Aliansi", ap: "Konsumsi AP", diamond: "Berlian", stamina: "Stamina", gather: "Pengumpulan", gear: "Perlengkapan/Rune/Totem/Batu Suci", hero: "Pecahan Pahlawan", heal: "Penyembuhan", help: "Bantuan Aliansi", building: "Kekuatan Bangunan", research: "Kekuatan Penelitian", troop: "Kekuatan Pasukan", rally: "Sarang Monster", speedup: "Percepatan", transport: "Transportasi", packs: "Paket", other: "Lainnya" },
+    questNames: {
+      "Arena Challenge": "Tantangan Arena",
+      "Black Market": "Pasar Gelap",
+      "Consume Alliance Coins": "Konsumsi Koin Aliansi",
+      "Consume AP": "Konsumsi AP",
+      "Consume Diamond": "Konsumsi Berlian",
+      "Consume Stamina": "Konsumsi Stamina",
+      "Gather Food": "Kumpulkan Makanan",
+      "Gather Iron": "Kumpulkan Besi",
+      "Gather Stone": "Kumpulkan Batu",
+      "Gather Wood": "Kumpulkan Kayu",
+      "Get Gear Materials": "Dapatkan Material Perlengkapan/Rune/Totem/Batu Suci",
+      "Get Hero Shard": "Dapatkan Pecahan Pahlawan",
+      "Heal Units": "Sembuhkan Unit",
+      "Help Allies": "Bantu Aliansi",
+      "Improve Building Power": "Tingkatkan Kekuatan Bangunan",
+      "Improve Research Power": "Tingkatkan Kekuatan Penelitian",
+      "Improve Troop Power": "Tingkatkan Kekuatan Pasukan",
+      "Rally on Monster Dens": "Serangan pada Sarang Monster",
+      "Research": "Penelitian",
+      "Speedups (Build/Tech/Training/Healing)": "Percepatan (Bangun/Tek/Latihan/Penyembuhan)",
+      "Speedup (Build/Tech/Training/Healing)": "Percepatan (Bangun/Tek/Latihan/Penyembuhan)",
+      "Transport Any Resources to Allies": "Transportasikan Sumber Daya Apa Pun ke Aliansi",
+      "Transport Food among allies": "Transportasikan Makanan di antara Aliansi",
+      "Transport Iron among allies": "Transportasikan Besi di antara Aliansi",
+      "Transport Stone among allies": "Transportasikan Batu di antara Aliansi",
+      "Transport Wood among allies": "Transportasikan Kayu di antara Aliansi",
+      "Buy Packs": "Beli Paket",
+      "Gain Diamonds via Packs": "Dapatkan Berlian melalui Paket"
+    },
+    times: {
+      "12 hours": "12 jam",
+      "1 day": "1 hari",
+      "2 days": "2 hari",
+      "3 days": "3 hari",
+      "4 days": "4 hari",
+      "33 hours": "33 jam"
+    },
+    notes: {
+      "Challenge other players in the Arena. Winning is not required, only completion.": "Tantang pemain lain di Arena. Menang tidak diperlukan, hanya penyelesaian.",
+      "Best performed during the Arena event for double rewards.": "Paling baik dilakukan selama acara Arena untuk hadiah ganda.",
+      "Purchase items from the Black Market. Focus on resources or speedups you need.": "Beli item dari Pasar Gelap. Fokus pada sumber daya atau percepatan yang Anda butuhkan.",
+      "Use AP to attack monsters on the map. It's best to hunt monsters that provide materials you need for progression.": "Gunakan AP untuk menyerang monster di peta. Yang terbaik adalah berburu monster yang menyediakan materi yang Anda butuhkan untuk maju.",
+      "Consider using AP potions if you're close to completion but running out of natural recovery.": "Pertimbangkan menggunakan ramuan AP jika Anda mendekati penyelesaian tetapi kehabisan pemulihan alami.",
+      "Heal wounded troops in the infirmary. You can battle low-level monsters to intentionally create minor casualties if needed.": "Sembuhkan pasukan yang terluka di rumah sakit. Anda dapat berperang dengan monster level rendah untuk sengaja menciptakan korban ringan jika diperlukan.",
+      "High-value quest. This is a personal quest that requires actual purchases in the game store.": "Misi bernilai tinggi. Ini adalah misi pribadi yang memerlukan pembelian aktual di toko permainan.",
+      "Perfect for large upgrades or during diamond spending events.": "Sempurna untuk upgrade besar atau selama acara pengeluaran berlian.",
+      "One of the most efficient high-point quests. Save your troop training speedups for this specific quest.": "Salah satu misi poin tinggi paling efisien. Simpan percepatan pelatihan pasukan Anda untuk misi spesifik ini."
     }
   }
 };
