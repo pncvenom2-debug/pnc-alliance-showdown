@@ -65,6 +65,15 @@ export default function Index() {
           const timeA = a.time || "";
           const timeB = b.time || "";
           comparison = timeA.localeCompare(timeB);
+        } else if (sortBy === "recommendation") {
+          const recommendationOrder: Record<string, number> = {
+            "recommended": 1,
+            "neutral": 2,
+            "not_recommended": 3
+          };
+          const orderA = recommendationOrder[a.recommendation || "neutral"] || 2;
+          const orderB = recommendationOrder[b.recommendation || "neutral"] || 2;
+          comparison = orderA - orderB;
         }
 
         return sortOrder === "asc" ? comparison : -comparison;

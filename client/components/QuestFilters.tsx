@@ -72,6 +72,7 @@ export function QuestFilters({
               <SelectItem value="type" className="text-xs">{t.filters.type}</SelectItem>
               <SelectItem value="points" className="text-xs">{t.filters.points}</SelectItem>
               <SelectItem value="time" className="text-xs">{t.filters.time}</SelectItem>
+              <SelectItem value="recommendation" className="text-xs">{t.filters.recommendation}</SelectItem>
             </SelectContent>
           </Select>
         </div>
