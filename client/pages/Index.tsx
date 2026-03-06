@@ -181,7 +181,7 @@ export default function Index() {
       <footer className="mt-16 sm:mt-20 border-t border-border/40 py-8 sm:py-10 bg-secondary/20">
         <div className="container flex flex-col items-center justify-center gap-4 px-4">
           <p className="text-xs sm:text-sm text-muted-foreground text-center">
-            &copy; 2024 Alliance Showdown Tracker. Not affiliated with Puzzles & Chaos.
+            &copy; 2026 Alliance Showdown Tracker. Not affiliated with Puzzles & Chaos.
           </p>
         </div>
       </footer>
