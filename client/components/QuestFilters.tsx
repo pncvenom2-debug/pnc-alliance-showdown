@@ -52,6 +52,8 @@ export function QuestFilters({
             <SelectContent align="end" className="bg-card border-border max-h-[300px]">
               <SelectItem value="all" className="text-xs">{t.filters.all}</SelectItem>
               <SelectItem value="personal" className="font-bold text-primary text-xs">{t.filters.personal}</SelectItem>
+              <SelectItem value="recommended" className="font-bold text-emerald-400 text-xs">✨ {t.filters.recommended}</SelectItem>
+              <SelectItem value="not_recommended" className="font-bold text-rose-400 text-xs">⚠️ {t.filters.not_recommended}</SelectItem>
               {[...types].sort().map((type) => (
                 <SelectItem key={type} value={type} className="capitalize text-xs">
                   {t.types[type] || type}
@@ -72,8 +74,6 @@ export function QuestFilters({
               <SelectItem value="type" className="text-xs">{t.filters.type}</SelectItem>
               <SelectItem value="points" className="text-xs">{t.filters.points}</SelectItem>
               <SelectItem value="time" className="text-xs">{t.filters.time}</SelectItem>
-              <SelectItem value="recommended" className="text-xs">{t.filters.recommended}</SelectItem>
-              <SelectItem value="not_recommended" className="text-xs">{t.filters.not_recommended}</SelectItem>
             </SelectContent>
           </Select>
         </div>

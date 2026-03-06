@@ -45,6 +45,10 @@ export default function Index() {
           matchesType = true;
         } else if (selectedType === "personal") {
           matchesType = quest.points >= 240;
+        } else if (selectedType === "recommended") {
+          matchesType = quest.recommendation === "recommended";
+        } else if (selectedType === "not_recommended") {
+          matchesType = quest.recommendation === "not_recommended";
         } else {
           // Specific type: only show if it matches type AND is not a personal quest (240 pts)
           // This "puts them under" the personal filter instead.
@@ -65,14 +69,6 @@ export default function Index() {
           const timeA = a.time || "";
           const timeB = b.time || "";
           comparison = timeA.localeCompare(timeB);
-        } else if (sortBy === "recommended") {
-          const isRecommendedA = a.recommendation === "recommended" ? 1 : 0;
-          const isRecommendedB = b.recommendation === "recommended" ? 1 : 0;
-          comparison = isRecommendedB - isRecommendedA;
-        } else if (sortBy === "not_recommended") {
-          const isNotRecommendedA = a.recommendation === "not_recommended" ? 1 : 0;
-          const isNotRecommendedB = b.recommendation === "not_recommended" ? 1 : 0;
-          comparison = isNotRecommendedB - isNotRecommendedA;
         }
 
         return sortOrder === "asc" ? comparison : -comparison;
