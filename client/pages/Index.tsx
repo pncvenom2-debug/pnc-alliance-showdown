@@ -65,15 +65,14 @@ export default function Index() {
           const timeA = a.time || "";
           const timeB = b.time || "";
           comparison = timeA.localeCompare(timeB);
-        } else if (sortBy === "recommendation") {
-          const recommendationOrder: Record<string, number> = {
-            "recommended": 1,
-            "neutral": 2,
-            "not_recommended": 3
-          };
-          const orderA = recommendationOrder[a.recommendation || "neutral"] || 2;
-          const orderB = recommendationOrder[b.recommendation || "neutral"] || 2;
-          comparison = orderA - orderB;
+        } else if (sortBy === "recommended") {
+          const isRecommendedA = a.recommendation === "recommended" ? 1 : 0;
+          const isRecommendedB = b.recommendation === "recommended" ? 1 : 0;
+          comparison = isRecommendedB - isRecommendedA;
+        } else if (sortBy === "not_recommended") {
+          const isNotRecommendedA = a.recommendation === "not_recommended" ? 1 : 0;
+          const isNotRecommendedB = b.recommendation === "not_recommended" ? 1 : 0;
+          comparison = isNotRecommendedB - isNotRecommendedA;
         }
 
         return sortOrder === "asc" ? comparison : -comparison;

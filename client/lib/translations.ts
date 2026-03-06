@@ -77,7 +77,7 @@ export const translations: Record<Language, Translations> = {
   en: {
     header: { title: "Alliance Showdown", subtitle: "Puzzles & Chaos", dashboard: "Dashboard" },
     welcome: { badge: "Quest Optimization Engine v1.0", title: "Quest Data Dashboard", subtitle: "Visualize, sort, and filter every alliance showdown quest with ease. Maximize your rewards and efficiency with real-time data analysis." },
-    filters: { search: "Search quests...", all: "All Types", personal: "Personal (240)", sort: "Sort By", quest: "Quest Name", type: "Quest Type", points: "Points", time: "Time", recommendation: "Recommendation" },
+    filters: { search: "Search quests...", all: "All Types", personal: "Personal (240)", sort: "Sort By", quest: "Quest Name", type: "Quest Type", points: "Points", time: "Time", recommended: "Recommended", not_recommended: "Not Recommended" },
     stats: { showing: "Showing {count} Quests", sorting: "Sorting by {sortBy} ({order})", asc: "asc", desc: "desc" },
     card: { requirement: "Requirement", points: "Points", time: "Time", noTime: "No time limit" },
     modal: { reward: "Reward", timeLimit: "Time Limit", tip: "Helpful Tip", close: "Got it", noTip: "No specific tips available for this quest." },
@@ -155,7 +155,7 @@ export const translations: Record<Language, Translations> = {
   it: {
     header: { title: "Sfida tra Alleanze", subtitle: "Puzzles & Chaos", dashboard: "Dashboard" },
     welcome: { badge: "Motore di Ottimizzazione Missioni v1.0", title: "Dashboard Dati Missioni", subtitle: "Visualizza, ordina e filtra ogni missione della sfida tra alleanze con facilità." },
-    filters: { search: "Cerca missioni...", all: "Tutti i Tipi", personal: "Personali (240)", sort: "Ordina per", quest: "Nome Missione", type: "Tipo Missione", points: "Punti", time: "Tempo", recommendation: "Raccomandazione" },
+    filters: { search: "Cerca missioni...", all: "Tutti i Tipi", personal: "Personali (240)", sort: "Ordina per", quest: "Nome Missione", type: "Tipo Missione", points: "Punti", time: "Tempo", recommended: "Consigliate", not_recommended: "Non Consigliate" },
     stats: { showing: "Mostrando {count} Missioni", sorting: "Ordinamento per {sortBy} ({order})", asc: "cresc", desc: "decresc" },
     card: { requirement: "Requisito", points: "Punti", time: "Tempo", noTime: "Nessun limite" },
     modal: { reward: "Ricompensa", timeLimit: "Limite di Tempo", tip: "Consiglio Utile", close: "Capito", noTip: "Nessun consiglio specifico disponibile." },
@@ -233,7 +233,7 @@ export const translations: Record<Language, Translations> = {
   pt: {
     header: { title: "Confronto de Alianças", subtitle: "Puzzles & Chaos", dashboard: "Painel" },
     welcome: { badge: "Motor de Otimização de Missões v1.0", title: "Painel de Dados de Missões", subtitle: "Visualize, ordene e filtre todas as missões do confronto de alianças com facilitade." },
-    filters: { search: "Pesquisar missões...", all: "Todos os Tipos", personal: "Pessoais (240)", sort: "Ordenar por", quest: "Nome da Missão", type: "Tipo de Missão", points: "Pontos", time: "Tempo", recommendation: "Recomendação" },
+    filters: { search: "Pesquisar missões...", all: "Todos os Tipos", personal: "Pessoais (240)", sort: "Ordenar por", quest: "Nome da Missão", type: "Tipo de Missão", points: "Pontos", time: "Tempo", recommended: "Recomendadas", not_recommended: "Não Recomendadas" },
     stats: { showing: "Mostrando {count} Missões", sorting: "Ordenando por {sortBy} ({order})", asc: "asc", desc: "desc" },
     card: { requirement: "Requisito", points: "Pontos", time: "Tempo", noTime: "Sem limite" },
     modal: { reward: "Recompensa", timeLimit: "Limite de Tempo", tip: "Dica Útil", close: "Entendido", noTip: "Nenhuma dica específica disponível." },
@@ -311,7 +311,7 @@ export const translations: Record<Language, Translations> = {
   de: {
     header: { title: "Allianz-Showdown", subtitle: "Puzzles & Chaos", dashboard: "Dashboard" },
     welcome: { badge: "Quest-Optimierungs-Engine v1.0", title: "Quest-Daten-Dashboard", subtitle: "Visualisieren, sortieren und filtern Sie jede Allianz-Showdown-Quest mit Leichtigkeit." },
-    filters: { search: "Quests suchen...", all: "Alle Typen", personal: "Persönlich (240)", sort: "Sortieren nach", quest: "Quest-Name", type: "Quest-Typ", points: "Punkte", time: "Zeit", recommendation: "Empfehlung" },
+    filters: { search: "Quests suchen...", all: "Alle Typen", personal: "Persönlich (240)", sort: "Sortieren nach", quest: "Quest-Name", type: "Quest-Typ", points: "Punkte", time: "Zeit", recommended: "Empfohlen", not_recommended: "Nicht Empfohlen" },
     stats: { showing: "Zeige {count} Quests", sorting: "Sortiert nach {sortBy} ({order})", asc: "aufst", desc: "abst" },
     card: { requirement: "Anforderung", points: "Punkte", time: "Zeit", noTime: "Kein Zeitlimit" },
     modal: { reward: "Belohnung", timeLimit: "Zeitlimit", tip: "Hilfreicher Tipp", close: "Verstanden", noTip: "Keine spezifischen Tipps verfügbar." },
@@ -389,7 +389,7 @@ export const translations: Record<Language, Translations> = {
   ru: {
     header: { title: "Противостояние Альянсов", subtitle: "Puzzles & Chaos", dashboard: "Панель" },
     welcome: { badge: "Движок оптимизации квестов v1.0", title: "Панель данных квестов", subtitle: "Визуализируйте, сортируйте и фильтруйте квесты противостояния альянсов." },
-    filters: { search: "Поиск квестов...", all: "Все типы", personal: "Личные (240)", sort: "Сортировка", quest: "Название", type: "Тип", points: "Очки", time: "Время", recommendation: "Рекомендация" },
+    filters: { search: "Поиск квестов...", all: "Все типы", personal: "Личные (240)", sort: "Сортировка", quest: "Название", type: "Тип", points: "Очки", time: "Время", recommended: "Рекомендуется", not_recommended: "Не Рекомендуется" },
     stats: { showing: "Показано {count} квестов", sorting: "Сортировка по {sortBy} ({order})", asc: "возр", desc: "убыв" },
     card: { requirement: "Требование", points: "Очки", time: "Время", noTime: "Без лимита" },
     modal: { reward: "Награда", timeLimit: "Лимит времени", tip: "Полезный совет", close: "Понятно", noTip: "Специфических советов нет." },
@@ -467,7 +467,7 @@ export const translations: Record<Language, Translations> = {
   uk: {
     header: { title: "Протистояння Альянсів", subtitle: "Puzzles & Chaos", dashboard: "Панель" },
     welcome: { badge: "Двигун оптимізації квестів v1.0", title: "Панель даних квестів", subtitle: "Візуалізуйте, сортуйте та фільтруйте квести протистояння альянсів." },
-    filters: { search: "Пошук квестів...", all: "Всі типи", personal: "Особисті (240)", sort: "Сортування", quest: "Назва", type: "Тип", points: "Очки", time: "Час", recommendation: "Рекомендація" },
+    filters: { search: "Пошук квестів...", all: "Всі типи", personal: "Особисті (240)", sort: "Сортування", quest: "Назва", type: "Тип", points: "Очки", time: "Час", recommended: "Рекомендовано", not_recommended: "Не Рекомендовано" },
     stats: { showing: "Показано {count} квестів", sorting: "Сортування за {sortBy} ({order})", asc: "зрост", desc: "спад" },
     card: { requirement: "Вимога", points: "Очки", time: "Час", noTime: "Без ліміту" },
     modal: { reward: "Нагорода", timeLimit: "Ліміт часу", tip: "Корисна порада", close: "Зрозуміло", noTip: "Специфічних порад немає." },
@@ -545,7 +545,7 @@ export const translations: Record<Language, Translations> = {
   fr: {
     header: { title: "Confrontation d'Alliances", subtitle: "Puzzles & Chaos", dashboard: "Tableau de bord" },
     welcome: { badge: "Moteur d'Optimisation de Quêtes v1.0", title: "Tableau de Bord des Quêtes", subtitle: "Visualisez, triez et filtrez facilement chaque quête de confrontation d'alliances." },
-    filters: { search: "Rechercher des quêtes...", all: "Tous les Types", personal: "Personnelles (240)", sort: "Trier par", quest: "Nom de la Quête", type: "Type de Quête", points: "Points", time: "Temps", recommendation: "Recommandation" },
+    filters: { search: "Rechercher des quêtes...", all: "Tous les Types", personal: "Personnelles (240)", sort: "Trier par", quest: "Nom de la Quête", type: "Type de Quête", points: "Points", time: "Temps", recommended: "Recommandées", not_recommended: "Non Recommandées" },
     stats: { showing: "Affichage de {count} Quêtes", sorting: "Tri par {sortBy} ({order})", asc: "croiss", desc: "décroiss" },
     card: { requirement: "Exigence", points: "Points", time: "Temps", noTime: "Pas de limite" },
     modal: { reward: "Récompense", timeLimit: "Limite de Temps", tip: "Conseil Utile", close: "Compris", noTip: "Aucun conseil spécifique disponible." },
@@ -623,7 +623,7 @@ export const translations: Record<Language, Translations> = {
   id: {
     header: { title: "Pertunjukan Aliansi", subtitle: "Puzzles & Chaos", dashboard: "Dasbor" },
     welcome: { badge: "Mesin Optimasi Misi v1.0", title: "Dasbor Data Misi", subtitle: "Visualisasikan, urutkan, dan filter setiap misi pertunjukan aliansi dengan mudah. Maksimalkan hadiah dan efisiensi Anda dengan analisis data real-time." },
-    filters: { search: "Cari misi...", all: "Semua Jenis", personal: "Personal (240)", sort: "Urutkan Berdasarkan", quest: "Nama Misi", type: "Jenis Misi", points: "Poin", time: "Waktu", recommendation: "Rekomendasi" },
+    filters: { search: "Cari misi...", all: "Semua Jenis", personal: "Personal (240)", sort: "Urutkan Berdasarkan", quest: "Nama Misi", type: "Jenis Misi", points: "Poin", time: "Waktu", recommended: "Direkomendasikan", not_recommended: "Tidak Direkomendasikan" },
     stats: { showing: "Menampilkan {count} Misi", sorting: "Pengurutan berdasarkan {sortBy} ({order})", asc: "naik", desc: "turun" },
     card: { requirement: "Persyaratan", points: "Poin", time: "Waktu", noTime: "Tanpa batas waktu" },
     modal: { reward: "Hadiah", timeLimit: "Batas Waktu", tip: "Tip Bermanfaat", close: "Mengerti", noTip: "Tidak ada tip khusus tersedia untuk misi ini." },
