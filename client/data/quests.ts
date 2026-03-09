@@ -45,7 +45,7 @@ const rawQuests: Quest[] = [
   { id: "42", quest: "Gather Wood", requirement: "7,200,000", points: 143, time: "3 days", type: "gather" },
   { id: "43", quest: "Gather Wood", requirement: "7,200,000", points: 172, time: "33 hours", type: "gather" },
   { id: "44", quest: "Get Gear Materials", requirement: "200,000", points: 80, time: null, type: "gear" },
-  { id: "45", quest: "Get Gear Materials", requirement: "400,000", points: 113, time: null, type: "gear" },
+  { id: "45", quest: "Get Gear Materials", requirement: "400,000", points: 113, time: "1 day", type: "gear" },
   { id: "46", quest: "Get Gear Materials", requirement: "800,000", points: 176, time: null, type: "gear" },
   { id: "47", quest: "Get Hero Shard", requirement: "120,000", points: 120, time: null, type: "hero" },
   { id: "48", quest: "Get Hero Shard", requirement: "240,000", points: 113, time: null, type: "hero" },
