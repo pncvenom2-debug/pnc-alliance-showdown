@@ -138,6 +138,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 days",
       "3 days": "3 days",
       "4 days": "4 days",
+      "22 hrs": "22 hrs",
       "33 hours": "33 hours"
     },
     notes: {
@@ -216,6 +217,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 giorni",
       "3 days": "3 giorni",
       "4 days": "4 giorni",
+      "22 hrs": "22 ore",
       "33 hours": "33 ore"
     },
     notes: {
@@ -294,6 +296,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 dias",
       "3 days": "3 dias",
       "4 days": "4 dias",
+      "22 hrs": "22 hrs",
       "33 hours": "33 horas"
     },
     notes: {
@@ -372,6 +375,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 Tage",
       "3 days": "3 Tage",
       "4 days": "4 Tage",
+      "22 hrs": "22 Std",
       "33 hours": "33 Stunden"
     },
     notes: {
@@ -450,6 +454,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 дня",
       "3 days": "3 дня",
       "4 days": "4 дня",
+      "22 hrs": "22 часа",
       "33 hours": "33 часа"
     },
     notes: {
@@ -528,6 +533,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 дні",
       "3 days": "3 дні",
       "4 days": "4 дні",
+      "22 hrs": "22 години",
       "33 hours": "33 години"
     },
     notes: {
@@ -606,6 +612,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 jours",
       "3 days": "3 jours",
       "4 days": "4 jours",
+      "22 hrs": "22 h",
       "33 hours": "33 heures"
     },
     notes: {
@@ -684,6 +691,7 @@ export const translations: Record<Language, Translations> = {
       "2 days": "2 hari",
       "3 days": "3 hari",
       "4 days": "4 hari",
+      "22 hrs": "22 jam",
       "33 hours": "33 jam"
     },
     notes: {
