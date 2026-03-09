@@ -103,6 +103,10 @@ const rawQuests: Quest[] = [
   { id: "84", quest: "Improve Troop Power", requirement: "3,250,000", points: 240, time: null, type: "troop", note: "One of the most efficient high-point quests. Save your troop training speedups for this specific quest." },
   { id: "85", quest: "Speedup (Build/Tech/Training/Healing)", requirement: "480h", points: 240, time: null, type: "speedup" },
   { id: "102", quest: "Help Allies", requirement: 35, points: 127, time: "1 day", type: "help" },
+  { id: "103", quest: "Gather Wood", requirement: "4,800,000", points: 138, time: "22 hrs", type: "gather" },
+  { id: "104", quest: "Gather Food", requirement: "4,800,000", points: 138, time: "22 hrs", type: "gather" },
+  { id: "105", quest: "Gather Stone", requirement: "960,000", points: 138, time: "22 hrs", type: "gather" },
+  { id: "106", quest: "Gather Iron", requirement: "240,000", points: 138, time: "22 hrs", type: "gather" },
 ];
 
 export const quests: Quest[] = rawQuests.map(q => {
