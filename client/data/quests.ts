@@ -107,6 +107,7 @@ const rawQuests: Quest[] = [
   { id: "104", quest: "Gather Food", requirement: "4,800,000", points: 138, time: "22 hrs", type: "gather" },
   { id: "105", quest: "Gather Stone", requirement: "960,000", points: 138, time: "22 hrs", type: "gather" },
   { id: "106", quest: "Gather Iron", requirement: "240,000", points: 138, time: "22 hrs", type: "gather" },
+  { id: "107", quest: "Get Gear Materials", requirement: "200,000", points: 120, time: "12 hours", type: "gear" },
 ];
 
 export const quests: Quest[] = rawQuests.map(q => {
